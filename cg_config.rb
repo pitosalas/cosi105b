@@ -1,10 +1,10 @@
 require 'coursegen'
 
 # Copyright string
-COPYRIGHT_STRING = "Copyright (2014-2016) R. Pito Salas, pitosalas@brandeis.edu"
+COPYRIGHT_STRING = "Copyright (2014-2018) R. Pito Salas, pitosalas@brandeis.edu"
 
 # bucket for AWS Deployment of the course
-AWS_BUCKET = "cosi105b-f2016"
+AWS_BUCKET = "cosi105b"
 
 # Course short name
 COURSE_SHORT_NAME = "Cosi 105b"
@@ -13,12 +13,13 @@ COURSE_ABBREV = "cs105"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "august-26-2016",
-  weekdays: [:tuesday, :friday],
-  number: 30,
-  skips: ['oct-4-2016', 'oct-25-2016', 'nov-25-2016'],
-  start_time: "12:30",
-  end_time: "13:50")
+  first_day: "jan-11-2018",
+  weekdays: [:tuesday, :thursday],
+  number: 36,
+  start_times: ["15:30", "15:30"],
+  end_times: ["16:50", "16:50"],
+  start_time: "15:30",
+  end_time: "16:50")
 
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
@@ -33,4 +34,6 @@ SECTION_CONFIG = [
 
 # Options are:
 # bullet_style: css style for each bullet
-STYLING_CONFIG = {bullet_style: "\"font-size: 60%; width: 10px; color: grey\""}
+STYLING_CONFIG = {bullet_style: %("font-size: 60%; width: 10px; color: grey")}
+HOME_PAGE = "/content/intro/03_syllabus.md.erb"
+HELPFUL_BOX = false
