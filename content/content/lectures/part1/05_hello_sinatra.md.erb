@@ -1,0 +1,48 @@
+---
+title: "Hello Sinatra"
+desc: Do a Sinatra tutorial and review again how the web works
+homework: 1) Follow and implement tutorial, get the db driven web site to work
+cat: web
+---
+<%= homework_hdr %>
+1. Complete [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). You should be at least up to Lesson 43. Believe me, when you get to 43 you are 100% up to speed with Ruby. Congratulations!
+1. <%= codebadge %> Complete and submit <%= link_to_topic :pa_mazes %>. This assignment is a little different, requiring you to get good with writing a more complicated algorithm than before. Do the work in your <%= link_to_intro :portfolio %>. Start a new top level directory for this second PA, i.e. `../cs166b_cburkh/mazes`. <%= deliverable "Zip up your pa_mazes directory in your portfolio and submit it to Late." %>
+
+1. <%= codebadge %> <%= partbadge %> **Code:** Use the video below while you read and do all the steps in this tutorial: [Making a simple, database driven website with Sinatra and Heroku](http://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/). Here you will see essentially all the basic steps you would need to create a simple version of nanoTwitter. Expect not to understand everything but I want you to start getting a feel of the lay of the land. Do the work inside your <%=link_to_intro :portfolio %>, directory `sinatraintro`. <%= deliverable "Working code in your portfolio" %>
+
+    I have done the complete example and made a video of it. Feel free to follow it but you must also type it in on your computer and get it to work. As for help if you require it!
+
+    <iframe width="560" height="315" src="//www.youtube.com/embed/5VGJF-RbTbE" frameborder="0" allowfullscreen></iframe>
+
+#### Results of playtesting:
+When Mojir tested this assignment he found the following details that you should pay attention to.
+
+* Use Ruby 2.3.1!
+* When I ran the command "bundle install" to install the gems I got this error for pg:
+
+<%= code_begin %>
+  Error:
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension
+An error occurred while installing pg (0.18.4), and Bundler cannot continue.
+Make sure that `gem install pg -v '0.18.4'` succeeds before bundling.
+
+Solution:
+I installed pg separately using this command: " gem install pg  --   --with-pg-lib=/usr/lib" and then I ran "bundle install"
+<%= code_end %>
+
+* When I ran "rake db:migrate" I got some errors (same as you got in minutes
+13:45) related to postgres environment so make sure to set up postgres environment first. After solving those errors I got this error
+<%= code_begin %>
+Error:
+rake aborted!
+NameError: uninitialized constant ActiveRecord::Migrator::Zlib
+
+Solution:
+Add " require 'zlib' " at the top of your environments.rb
+<%= code_end %>
+#### Homework discussion
+* How did it go? Lets try and explain what the program was doing.
+
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

@@ -1,0 +1,58 @@
+---
+title: Software Design
+desc: Software design is the study of how we arrange our code
+homework: 1) Study [POODR] Chapter 4, locate and submit the Warmup Questions in Latte; 2) Complete and submit Movies-2
+cat: design
+---
+<%= homework_hdr %>
+
+1. Study \[POODR\] Chapter 4. This is a difficult chapter. Make sure you have focused time to study it and follow along the coding samples in your <%= link_to_intro :portfolio %> directory `POODR`<%= deliverable "Locate and submit \\[POODR\\] Chapter 4 Warmup Questions in Latte" %>
+1. Complete and submit <%= link_to_topic :pa_movies_2 %> as usual, in a directory called `movies-2` in your <%= link_to_intro :portfolio %>. Look closely at the end of (PA) Movies Part 2 where two deliverables are specified.<%= deliverable "Submit them to Latte." %>
+
+#### Homework Discussion
+* Look at some of the questions asked in \[POODR\] work
+
+<%= include_topic :code_smells %>
+
+#### Design Fundamentals
+* Aesthetics/Beauty/Sweet Smelling code
+* Like a 'beautiful proof' or an 'elegant argument'
+* Programming in the small or large can be beautiful
+* Not an end to itself:
+  * Leads to: higher quality code
+  * Leads to: code that is easier to modify/adapt to new requirements
+  * Leads to: healthier code that doesn't get sick and decay as quickly
+
+##### Decomposition
+* A core **life** skill
+* I want to get into grad school: what are the steps? How do I decompose the problem?
+* You want to make an argument for something: what are the steps, how do I build a case?
+* Outlines, hierarchy, dependencies
+* For Software Design, decomposition is the central first step
+* **Example:**
+  * Class Bicycle might be better represented as Class Bicycle + Class Wheel
+
+##### Abstraction
+* Programming is all about abstraction
+* Understanding the important aspects of a problem, ignoring the rest
+* 'Leaky Abstractions'
+* Note, this does not always require inheritence!
+* **Example:**
+  * Class Invoice includes a collection of products with a price and a description
+  * We're abstracting away the difference between each product as long as they respond to messages
+
+##### Information hiding
+* "Inside" vs. "Outside", scales at many levels
+* "What you don't know can't hurt you"
+* Harden against future inevitable change
+* **Example:**
+  * Make everything possible `private`
+  * Example: Does anyone outside of Invoice need to know how the collection is represented?
+
+##### Decoupling
+* Related but not the same as decomposition
+* **Example:**
+  * Can I write Class Wheel so it knows nothing at all about class Bicycle?
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

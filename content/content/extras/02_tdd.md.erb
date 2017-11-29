@@ -1,0 +1,45 @@
+---
+title: Test Driven Development
+desc: Review of concepts of Test Driven Development
+homework: 1) Read POODR Chapters 8 and 9, and submit answers to warmup questions; tdd assignment; complete nT 0.2
+cat: design
+---
+<%= homework_hdr %>
+* Read \[POODR\] Chapters 8 and 9. Apply what you are learing to the team's nanoTwitter project. Respond to the warmup questions in Latte about the reading.
+* Read [Minimalicious testing in Ruby 1.9 with MiniTest](http://blog.arvidandersson.se/2012/03/28/minimalicous-testing-in-ruby-1-9)
+* Do the assignment in <%= link_to_topic :hw_tdd %>. Do it in your <%= :portfolio %> under subdirectory `tdd_example`. <%= deliverable "Zip up your directory and submit it to latte." %>
+* Finish everything under nT 0.2 (+ 0.1). Do the work in your portfolio, submit it to github. <%= team_deliverable "Also zip together your directory and post it to latte."%>
+
+
+#### Left overs from last class
+* Continue with <%= link_to_topic :rest_web_services %> at protocols
+
+#### Discussion
+* Homework
+  * Did you really do TDD? What is the key to it?
+  * How did it feel to program in this way? Was it easier, harder, different?
+  * Conventions: file names, separating the tests from the code (why?)
+
+#### Testing Intro
+<%= include_topic :tdd_intro %>
+
+#### Simplistic Demo
+* <%= link_to_topic :tdd_demo %>
+
+#### Money Demo
+* Goal: A Money class
+	* represent money in different currencies
+	* Allow them to be added and subtracted etc.
+* Look at the test suite
+* Look at [TDD Demo Video together](https://youtu.be/MGgzGIEYH38)
+
+#### Discussion
+* What do "I" do with testing in "real life"?
+* Let's review some of the options in [Minitest Quick Reference](http://mattsears.com/articles/2011/12/10/minitest-quick-reference)
+
+<%= include_topic :test_fixtures %>
+
+<%= link_to_topic :four_rules_simple_design %>
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

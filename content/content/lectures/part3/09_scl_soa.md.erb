@@ -1,0 +1,121 @@
+---
+title: SOA and microservices
+desc: Look at applications of microservices and SOA in building scalable systems. Consider risks and benefits.
+homework: 1) Read Parnas Paper; 2) Read Microservices Article and respond to warmups
+cat: scale
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
+
+<img src="http://site.xavier.edu/polt/typewriters/underwood5small.jpg" align="right" width="128">
+
+1. **Read** This classic paper by David Parnas about modularity: [Information distribution aspects of design methodology](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2828&context=compsci). It's so old that you can see it was written with a typewriter. Can you imagine? As you read, think of *modules of a system* as meaning *microservice*.
+
+1. <%= pdfbadge %> <%= partbadge %> <%= timebadge %> **Read** This review article about [Microservices](http://martinfowler.com/articles/microservices.html). As you read, think about the following warmup questions:
+  * Modularity (a characteristic that comes in different guises) is a central concept in software design, Microservices are one way to achieve modularity. Think of some of the others?
+  * What would you say is the central characteristic of a microservice that distinguishes it from an other kind of modularity.
+  * Draw an analogy between the present paper and Parnas' paper above.
+  * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
+  * <%= deliverable "Submit your responses as a pdf to Latte" %>
+1. **Read**: [Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
+
+#### Review of SOA
+
+<img src="http://www.martinfowler.com/articles/microservices/images/sketch.png" width="500" align="right">
+
+* Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
+* Single application, designed as
+  * Suite of small services
+  * Each running in a separate process
+  * Communicating with lightweight mechanisms
+  * Relying on internal REST Apis
+* See [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
+* Conway's law  simply states that
+
+  "Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure" (see [Conway's Law](http://www.melconway.com/Home/Committees_Paper.html))
+
+#### Communication
+* Trade-offs in communications between services
+* "Smart endpoints and dumb pipes" - End to end principle
+* **Unix Philosophy** (See [Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)). Summarized by [Peter Salus](https://en.wikipedia.org/wiki/Peter_H._Salus): (not [Pito Salas](https://en.wikipedia.org/wiki/Pito_Salas)):
+  * Write programs that do one thing and do it well.
+  * Write programs to work together.
+  * Write programs to handle text streams, because that is a universal interface.
+
+ **\<INTERLUDE\>**
+
+<%= code_begin %>
+ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
+<%= code_end %>
+
+* [Source of example](http://unix.stackexchange.com/questions/30759/whats-a-good-example-of-piping-commands-together)
+* [Using Ruby instead of Awk](http://nithinbekal.com/posts/ruby-sed-awk/)
+
+**\</INTERLUDE\>**
+
+* Options for communication
+  * Direct REST Api Calls
+  * Message Queueing
+  * Database tables
+  * Files
+* Considerations
+
+  * Services need to be "discovered"
+  * Services can be offline (crashed)
+  * Permanently or temporarily
+  * Handling of errors and time-outs
+  * Monitoring and troubleshooting
+  * Disaster Recovery
+* Timeouts on Services
+  * What does a timeout mean?
+  * Retrying with backoff
+  * [Circuit Breaker](http://martinfowler.com/bliki/CircuitBreaker.html)
+
+#### Exercise
+* Work in groups
+* Come up with a specific idea, with implementation details
+* One service (other than emailing) that nanoTwitter could have
+* [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
+
+#### Devops
+* Infrastructure management is automated as much as possible
+* CI (Continuous integration) very typical
+* Everything is "programmed" (scripts)
+  * Provisioning a server
+  * De-provisioning a server
+  * Updating software for an individual service
+  * Rollback of anything
+  * Backups and recovery
+  * Switching between data centers
+  * Monitoring and management
+* Using SSH is a sign of incomplete automation
+* Major categories of tools
+
+#### Design Considerations
+<img src="http://www.martinfowler.com/articles/microservices/images/decentralised-data.png" width="500" align="right">
+
+* Evolutionary Design
+  * Start with 1 big service (Majestic Monolith)
+  * Identify with practice what sub-component could be a service
+  * Keep things that change at the same time together in the same service (module)
+  * Horizontal Scalability
+  * Redundancy
+* Once services are introduced
+  * Service discovery
+  * Errors and timeouts etc
+  * Load balancing (Smart client, Hardware, Software)
+  * System level caching: Redis
+  * Queueing
+* Databases:
+  * Monolith: one database with many tables
+  * Microservice: Separate and distinct databases, per service
+  * Shard or Partition
+* Interfaces
+  * Internal implementation of service is irrelevant and isolated
+* Benefits and Goals that are satisfied:
+  * Any service can be replaced by new code with (no/minimal) impact on other services
+  * Each service can be designed and tested independently from the others
+  * Failure in one service is kept isolated
+
+  #### Next Class
+  * Look at homework: <%= link_to_next_lecture %>

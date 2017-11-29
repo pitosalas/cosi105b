@@ -1,0 +1,46 @@
+---
+title: Introduction to Sinatra
+desc: A very lightweight Ruby based web server
+homework: 1) Study in depth [SODRR] Chapter 1, and submit warmup exercises; 2) Implement the code from that Chapter yourself.
+cat: web
+---
+<%= homework_hdr %>
+1. <%= timebadge %> <%= partbadge %> **Read:** Study Service Oriented Design in Ruby and Rails \[SODDR\] Chapter 1, as you watch this video. In the video I narrate concepts and demonstrate the actual coding that is done in that chapter. It covers much of the same ground as the last tutorial, but goes a little further. <%= deliverable "Answer warmup questions in Latte." %>
+
+    <div class="well"><iframe width="400" height="225" src="https://www.youtube.com/embed/zPaG-g-d6sY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+2. <%= codebadge %> <%= partbadge %> **Code**: Now, actually implement the code in \[SODRR\] Chapter 1 and get it to work! **Important**: Please attend to these specific details!
+  * Attempt to get the code to work, **but importantly, stop when you get to "Implementing the client library".**
+  * Do coding on your own computer in your <%= link_to_intro :portfolio %> in a new top level directory called `user-service`
+  * Because the book is a couple of years old, there are some changes you need to keep in mind in order to get it to work on your own computer. They are all mentioned in the video but here they are again:
+    1. gem is called `active_record` (not activerecord)
+    1. No need to require 'rubygems' anymore (since Ruby 2.0)
+    1. The first few lines of service_spec.rb change a lot. [Click here to see a working example](https://raw.githubusercontent.com/Cosi-105/sotl-user-service/master/spec/service_spec.rb)
+  * <%= deliverable "Working code in your portfolio" %>
+
+#### Discussion
+* Discuss building teams for projects
+* Homework structure - coding from book?
+* Discuss concepts you learned
+* Quick review of web client / server relationship (http/url/html/json)
+* Reminder: <%= link_to_topic :what_is_sinatra %>
+
+#### What is a web service and an SOA?
+  * A web server is now used not just as a place that has web pages for people to read, but as a place that delivers a service (functionality, data, information) to other programs, without human intervention.
+  * instead of returning HTML (for web browsers to render) it returns data (for other apps to use!) Such a server is often said to be delivering a *web service* or *web API*.
+  * This brings the notion of modularity, isolation, information hiding all the way up to the level of full servers. And creating an application can now become the stringing together of web services, each of which might be delivered by a different company (think Amazon, Heroku, Apple, IBM)
+
+<%= include_topic :models %>
+<%= include_topic :ar_db_mechanics %>
+
+
+#### Walk through some code
+* [Sinatra Intro](http://www.sinatrarb.com/intro.html)
+* [Simple Database Driven Website with Heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
+* [SOTL-simple-service](https://github.com/pitosalas/sotl-user-service)
+
+#### Sinatra References
+* The readme of Sinatra is a great resource: [Sinatra Readme](http://www.sinatrarb.com/intro.html)
+* A good basic book on sinatra is: [Sinatra Up and Running](http://www.amazon.com/Sinatra-Up-Running-Alan-Harris/dp/1449304230)
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

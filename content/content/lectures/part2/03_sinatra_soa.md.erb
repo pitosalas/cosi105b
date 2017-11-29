@@ -1,0 +1,53 @@
+---
+title: Sinatra Architectures
+desc: Sinatra and Service Oriented Architectures
+homework: 1) Read Chapter 2 of SODDR and do the warmups; 2) DBSchema of nT; 3) Complete work on nT 0.1.
+cat: web
+---
+
+<%= homework_hdr %>
+
+1. <%= pdfbadge %> <%= partbadge %> <%= timebadge %> **Read [SOODR] Chapter 2:** \[SODRR\] Chapter 2. Make note of points that confused you. It is a bit of an abstract chapter, but it sets the stage for the kinds of architectures we care about. Answer the following warmup questions about the chapter:
+  * What is a Service Oriented Architecture? The whole chapter is about that topic and I don't expect you to reproduce the chapter. How do you recognize a SOA? What are some of the advantages? How would you explain it to an experienced web developer who had not taken this course?
+  * What do you know about the HTTP Response? You know all about the URL and the various HTTP request verbs, GET, PUT etc. Turning your attention now to the response: what does an HTTP response return for a typical web server? And when we are talking about a Web service in a service oriented architecture, what does an HTTP response typically include that is different? Can you motivate why it might be different in the two scenarios?
+  * Still Confused? Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, say so. And add the two ideas, explanations or concepts that yove learned that you think are particularly interesting or important. Please make it clear whether it's a confusion or an insight.
+  * <%= deliverable "Submit warmup questions" %>
+1. <%= pdfbadge %> **Schema:** Complete and submit the [DBSCHEMA] part of nanoTwitter 0.1 (see  <%= link_to_section :nt, :nt_outline %>.). Do it individually, not with your team. <%= deliverable "nanoTwitter Schema Design" %>
+1. <%= partbadge %> <%= codebadge %> **Complete nt 0.1 as a team:** See: <%= link_to_section :nt, :nt_outline %>. All the work is happening in your portfolio, directory `/nanotwitter`. <%= team_deliverable %(nT code for [nanoTwitter 0.1] in portfolio and github) %>
+
+#### Discussion
+* Complete live coding remo from last class
+* Discussion about Chapter 2, what is a service and related questions
+  * SOA vs SOD vs Restful Design vs. Microservices
+  * What is business logic?
+  * Why might Sinatra be better than Rails for SOA?
+
+#### Walk through of a basic scenario
+* Cricket scoring application - First cut
+  * Millions of fans are constantly refreshing page to see current score
+  * Admin (referree?) enters in scores and stats as the game progresses
+  * Default implementation with a single "monolythic" app
+  * How things break down
+* Divide into two services: Fan user interface app
+  * All scores are stored in a static JSON file on disk, "cricket_data.json"
+  * Read only. This app never writes
+  * Nearly infinitely scalable
+* Admin app: Admin user interface
+  * Create new games
+  * Add new stats and info durng game
+  * Stored in a Postgres database
+  * Writes out new version of "cricket_data.json" once per second
+  * Always responsive, no matter what's going on on user side
+* Let's look: Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
+
+#### Review of everything so far
+1. What a web server is and how Sinatra helps you create one
+1. Meaning of the URL
+1. ActiveRecord as the bridge between Ruby and the relational database
+1. The relationship between the client and the server
+1. How Unit testing is done with Mintest/Spec et al.
+1. The idea of Test Driven Development
+1. HTTP and it's different Verbs like GET, PUT, POST etc.
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

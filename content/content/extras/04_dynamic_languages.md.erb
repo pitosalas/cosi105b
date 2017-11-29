@@ -1,0 +1,54 @@
+---
+title: Dynamic Languages
+desc: Getting deeper into Object Oriented design
+homework: 1) Read POODR Chapter 5, Submit answers to warmup questions to Latte; 2) Teams work on nT 0.3; 3) Do Duck Typing assignment
+cat: design
+---
+<%= homework_hdr %>
+1. **POODR**: Study \[POODR\] Chapter 5. <%= deliverable "Please complete the warmups in Latte"%>
+2. **nanoTwitter teams**: I won't micromanage this, but continue working on nanoTwitter. nT 0.3 Will have to be complete next class.
+3. **Duck Typing**: Do <%= link_to_topic :duck_typing_ex %>. <%= deliverable "Submit code in a single.rb file to Latte" %>
+
+#### Discussion
+* Article Discussion
+  * Read this [Twitter cuts Meercat from its social graph just as SXSW gets started](http://www.theverge.com/2015/3/13/8213255/twitter-cuts-meerkat-off-from-its-social-graph-just-as-sxsw-gets)
+  * How did Twitter do that? What is the impact of that change? Why did Twitter do that? Do you agree with what they did?
+  * 5 minutes: Read and think on your own about the answers to those questions
+  * 5 minutes: disucss with your neighbor
+
+#### Static vs. Dynamic Typing
+* Look at and examine the sequence of examples from Chapter 5
+
+* Static vs. Dynamic Typing
+  * Java interfaces are like Classes without method bodies
+  * You can only call a method on the right type
+  * There is enough information in the text of the program
+  * Compile can catch errors and compiled code can be optimized for performance
+
+~~~~ java
+interface Animal {
+
+   public void eat();
+   public void travel();
+}
+Animal myAnimal = new Dog();
+myAnimal.eat();
+~~~~
+
+#### Dynamic Typing
+* Objects determine at run time whether they implement a message (method)
+* Nothing in the syntax of the code limits what is possible at run time
+* Compilation and exection are more tightly connected
+* Opens up new and rich design options (Duck typing, meta programming)
+
+<%= include_topic :duck_typing %>
+
+##### Inferred typing
+* A new concept
+* Somewhere between the two
+* Some newer languages, e.g. TypeScript: [Type Inference](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Type%20Inference.md)
+
+<%= include_topic :four_rules_simple_design %>
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

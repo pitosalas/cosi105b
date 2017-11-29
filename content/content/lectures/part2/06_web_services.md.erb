@@ -1,0 +1,30 @@
+---
+title: nanoTwitter and REST APIs
+desc: How to think about Web Services API designs and documentation
+homework: 2) Read about REST and respond to warmups; 2) Based on reading about routes in nanoTwitter, submit API documentation; 3) Begin work on nT 0.3
+cat: nt
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
+
+1. <%= partbadge %> <%= timebadge %> Read this article. It's long but important: [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api). Here are some warmup questions to think about:
+  * The PUT http verb and the POST http verb sound very similar. Can you explain the difference? Include an example from nanoTwitter of where each would be appropriate, and explain why. (Beware this is a question that trips up even experienced web engineers!)
+  * What are CRUD operations? You know that REST APIs follow the patterns of the CRUD operations. But what do you do when you need an action that doesn't fit? Give an example from nanoTwitter that fits within CRUD and one that does not.
+  * In the context of REST APIs, what is pagination? Why would you say that pagination is a concern, and can you give some scenarios where it becomes a concern?
+  * Please mention one or two concepts or topics from this reading that you didn't follow or would like to learn more about.
+  * <%= deliverable "Respond to the warmups in Latte." %>
+1. <%= codebadge %> <%= pdfbadge %> Examine the nt Web Services (REST) API routes from <%= link_to_section :nt, :nt_functionality %>. You will see that the general pattern is laid out, but not all permutations are explained. Evaluate them in the context of this reading. You're welcome to improve them so they follow more pragmatic REST principles. Now, write "REST API Documentation" for the nanoTwitter service api. Look for examples on the web for how web APIs are documented for what you think is a good format. (Here's what twitter does as an example: [Twitter statuses API](https://dev.twitter.com/rest/reference/get/statuses/retweets_of_me). Remember that you have to state the url's "syntax" and the format of the input and output data (JSON). Your documentation should be good enough for a programmer who doesn't know anything about your app to properly access the API. <%= team_deliverable "PDF with the API documentation. Submit to Latte and also store in doc/ directory of your portfolio." %>
+
+#### Questionnaire
+* Finish bit from last class
+
+#### Discussion and review
+Think about this, then talk to your neighbor, write down answers:
+
+* What are some of the reasons why a product (like Facebook) would be divided up into "services"? Doing this is sometimes called a service oriented architecture. What is a service? What are some of the motivations for dividing a product into a set of services?
+* HTTP is a protocol used when one computer (the client) has to make a request of another computer (the server). The client makes a request, and the server responds to that request. What are the key parts or elements in the request? What are the key parts of building blocks of the response?
+
+<%= include_topic :rest_web_services %>
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>
