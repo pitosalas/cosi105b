@@ -15,11 +15,13 @@ COURSE_ABBREV = "cs105"
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "jan-11-2018",
   weekdays: [:tuesday, :thursday],
-  number: 36,
+  number: 27,
   start_times: ["15:30", "15:30"],
   end_times: ["16:50", "16:50"],
   start_time: "15:30",
-  end_time: "16:50")
+  end_time: "16:50",
+  skips: ["jan-18-2018"])
+
 
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [

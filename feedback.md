@@ -46,3 +46,18 @@
   * maybe share some more useful tools and more examples of good code style
   * more heroku guidance
   * no written summary turn-in
+
+  #### 2017
+
+  #### Discussion
+  * Actionable feedback from 3x5 cards
+    * Do a Git Tutorial. We will do one at Recitation today
+    * Some people had lots of challenges setting up the environment
+    * People like the live coding demonstrations
+    * People like hearing about real-world applicataions and how things work there
+  * Other feedback
+    * Mention what's the homework at the end of each class?
+    * Don't like that videos require me to open window to full screen
+    * Don't like to use a book for coding assignment, would like online
+  * Unclear Feedback:
+    * Stop Changing all the future assignments if we haven't gotten there yet.

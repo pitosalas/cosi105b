@@ -5,6 +5,8 @@ homework: 1) Study in depth [SODRR] Chapter 1, and submit warmup exercises; 2) I
 cat: web
 ---
 <%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
 1. <%= timebadge %> <%= partbadge %> **Read:** Study Service Oriented Design in Ruby and Rails \[SODDR\] Chapter 1, as you watch this video. In the video I narrate concepts and demonstrate the actual coding that is done in that chapter. It covers much of the same ground as the last tutorial, but goes a little further. <%= deliverable "Answer warmup questions in Latte." %>
 
     <div class="well"><iframe width="400" height="225" src="https://www.youtube.com/embed/zPaG-g-d6sY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
@@ -19,7 +21,6 @@ cat: web
 
 #### Discussion
 * Discuss building teams for projects
-* Homework structure - coding from book?
 * Discuss concepts you learned
 * Quick review of web client / server relationship (http/url/html/json)
 * Reminder: <%= link_to_topic :what_is_sinatra %>
