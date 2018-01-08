@@ -4,6 +4,7 @@ preprocess do
   Toc.instance.prepare @items, SECTION_CONFIG
 end
 
+
 compile '/bootstrap/**/*' do
   nil
 end
@@ -23,7 +24,9 @@ end
 compile '/**/*.{md,ical}.erb' do
   if item[:status] != "hidden"
     filter :erb
-    filter :kramdown
+#    filter :redcarpet, options: { fenced_code_blocks: true }
+    filter :kramdown, coderay_line_numbers: nil
+#    filter :colorize_syntax, default_colorizer: :rouge
     layout '/course.*'
   else
     nil

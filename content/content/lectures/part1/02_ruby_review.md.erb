@@ -9,13 +9,31 @@ cat: programming
 
 1. <%= partbadge %> <%= zipbadge %> **Programming:** Do <%= link_to_topic :pa_interactive_music %>. This assignment is designed to have you practice and demonstrate your ruby programming skills. It has no complicated algorithms, but you will have to know how to design a program, design a few classes, use a gem, process user input. Do coding on your own computer in your <%= link_to_intro :portfolio %> in a new top level directory called `pa-ims`. You should <%= deliverable "First draft of soliution, zip up the directory and submit to Latte." %>
 
-#### Discussions and questions
+#### Ruby Live Coding Demonstration
+* <%= link_to_topic :intro_tut %>
+* <%= link_to_topic :classes_tut %>
+* <%= link_to_topic :inheritance_tut %>
 
-* MOSS
-* Everyone takes 5 minutes to write down 2 ruby questions on paper
-* Everyone take x minutes to share your IMS on screen with your neighbor and get help from them
-* Round Robin questions from beginning
-* <%= link_to_topic :pa_interactive_music %>
+#### Ruby
+* Questions about the homework.
+* Ruby coding reminders:
+  * spaces not tabs, 2 spaces per tab
+  * Classes are CamelCased
+  * method_names and variable_names are lower case, with underlines
+  * filenames are lower case with underlines, named after the top_level_class.rb
+  * Classes should be less than 100 lines long
+  * Methods should be less than 15 lines long
+  * No standalone code or definitions. Everything should be part of a class
+  * No global variables
+  * Don't use @@foo
+  * instead of a method called "display" on a class, add a method called to_s which returns the class state as a text string. That way you can do a puts on it.
+
+  #### Discussions and questions
+  * Review <%= link_to_topic :pa_interactive_music %>
+  * MOSS
+  * Everyone takes 5 minutes to write down 2 ruby questions on paper
+  * Round Robin questions from beginning
+
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
