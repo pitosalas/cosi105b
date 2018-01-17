@@ -27,7 +27,14 @@ cat: web
   * Because the book is a couple of years old, there are some changes you need to keep in mind in order to get it to work on your own computer. They are all mentioned in the video but here they are again:
     1. gem is called `active_record` (not activerecord)
     1. No need to require 'rubygems' anymore (since Ruby 2.0)
+    1. From the command line it is still `gem install activerecord` but line 2 of service.rb should be `require 'active_record'`
+    1. Instead of `spec spec/service_spec.rb` I needed to run `rspec spec/service_spec.rb`
+    1. service.rb line 4 should be `require_relative` instead of `require`
+    1. I needed to install the following gems: sqlite3, rack-test, and byebug
+    1. The first line of 001_create_users.rb should be `class CreateUsers < ActiveRecord::Migration[4.2]` instead of `class CreateUsers < ActiveRecord::Migration`
+    1. I needed to run `rake db:migrate` before running `rspec spec/service_spec.rb`
     1. The first few lines of service_spec.rb change a lot. [Click here to see a working example](https://raw.githubusercontent.com/Cosi-105/sotl-user-service/master/spec/service_spec.rb)
+    1. The specs the chapter tells you to add are already included in the code on your site in service_spec.rb
   * <%= deliverable "Working code in your portfolio" %>
 
 #### Discussion
