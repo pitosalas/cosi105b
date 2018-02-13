@@ -36,7 +36,7 @@ title: nano Twitter Functionality
 * Can never be deleted
 
 #### Features
-* Beyond the core CRUD features listed abovce
+* Beyond the core CRUD features listed above
 * Login/Logout and a profile
 * Search
 * Mentions
@@ -53,8 +53,7 @@ title: nano Twitter Functionality
 
 * You need to figure out the other ones.
 * The objective is that someone can write, for example, an iPhone nanoTwitter client that would use this API to implement the functionality.
-* Distinguish between the API calls that need a logged in user vs. those that are public
-*
+* Distinguish between the API calls that need a logged in user vs. those that are public. Those that are public would not require the user's `apitoken`
 
 * Values as JSON, as example:
   * Tweet:
@@ -75,21 +74,19 @@ title: nano Twitter Functionality
   * List of the most recent 50 tweets from any user, each with link to tweeter's page
   * Login link
 * Logged-in root page (/)
-  * Maps to /user/1234 when user 1234 is logged in
+  * List of most recent 50 tweets of users you follow
+  * Ability to tweet
+  * Mini-profile
 * Specific user's page (/user/1234)
-  * If this is logged in users own page
-    * Equiv to logged in root
-    * Ability to tweet (i.e. equiv to /)
-  * If this is not logged in users own page, but a user is logged in
-    * Button to follow that user (available only if logged in)
+  * If someone is logged in
+    * User 1234's most recent 50 tweets
+    * User 1234s mini-profile
+    * Button to follow that user (available only if logged in and not looking at self.
+    * Link to list of users followed by this user. Link text is a count.
+    * Link to list of newest tweets of users followed by this user.
+    * Link to list of users following this user. Link text is a count.
   * If no one is logged in
     * Display login link
-* In all cases, also:
-  * Top 50 tweets of users followed by logged in user
-  * User's profile info
-  * Link to list of users followed by this user. Link text is a count.
-  * Link to list of tweets made by this user. Link text is a count.
-  * Link to list of users following this user. Link text is a count.
 * Registration and related
   * Display the user registration page (/user/register)
   * Display user login prompt, and check for correct password (/login)
