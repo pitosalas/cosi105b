@@ -1,10 +1,12 @@
 ---
 title: Architecture and the Cloud
 desc: We start going in to more complicated core architectures, which will serve as the foundation for nanoTwitter
-homework: 1) Study in depth [SODDR] Chapter 3, and submit warmup questions in Latte; 2) Begin nT 0.2
+homework: 1) Study in depth [SODDR] Chapter 3, and submit warmup questions in Latte; 2) Teams continue to work on nT 0.2
 cat: nt
 ---
 <%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Code | <%=zipbadge %>: Zipped
+
 1.  <%= partbadge %> <%= timebadge %> **Read Chapter 3:** Read \[SODRR\] Chapter 3. This chapter introduces a running example of this book. It is a social feed reader. It's analogous but different from our nanoTwitter. You should get lots of good ideas from this chapter to use in nT. In this chapter you learn what all the database tables (and therefore what the Models are.) Based on what we've covered so far you should be able to follow it. This chapter mentions Rails. Rails is a bigger sort-of-superset of Sinatra. They are both Ruby libraries. In this class we will be using Sinatra (not Rails). Don't get confused:
 
     We **are** using ActiveRecord which is a separable Rails library which is also used in Sinatra. It is the "Object Relational Mapper." It is most important that you take the time to understand the overall set of tables, why they exist and how they relate to each other and apply them to the next step of the homework. Please respond to these warmup questions:
@@ -13,8 +15,7 @@ cat: nt
     * Job of the Feed, Subscription and Entry Models. In chapter 3, he describes three models as part of the overall data model: Feed, Subscription and Entry. Explain what kind of data each model contains, what the relationships are that it has, and what exactly the meaning or purpose is of that model. Also explain what the analog of each of those models would be to your nanoTwitter data model.
     * Still Confused? Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, say so. And add the two ideas, explanations or concepts that yove learned that you think are particularly interesting or important. Please make it clear whether it's a confusion or an insight.
     *  <%= deliverable "Respond to warmup questions from this chapter by 8am" %>
-1. <%= partbadge %> <%= codebadge %> **Work on NanoTwitter 0.2** Begin work on nanoTwitter 0.2 (<%= link_to_section :nt, :nt_outline %>). This work is all done together as a team. It makes sense to divide up tasks between the team members. All nanoTwitter work, from here on, should happen in your <%= link_to_intro :portfolio %>, directory `/nanotwitter`.  <%= team_deliverable %(nT code for [nanoTwitter 0.2] in portfolio and zipped up to latte) %>
-
+  1. **Teams continue to work on nanoTwitter 0.2**. See: <%= link_to_section :nt, :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Discussion
 * Let's take another look at the example from Tuesday
