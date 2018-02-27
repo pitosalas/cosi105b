@@ -5,7 +5,7 @@ homework: 1) Study SODRR Chapter 4 in depth, submit warmup questions in Latte; 2
 cat: scale
 ---
 <%= homework_hdr %>
-**Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Code | <%=zipbadge %>: Zipped
 
 1. <%= timebadge %> <%= partbadge %> Read \[SODRR\] Chapter 4. This is a hard, conceptual chapter. You will want to come back to it later in the course. This chapter goes into the next level of detail in the actual design of working servives in SOA or SOD. Here are your warmup questions:
     * In this chapter, and during the course so far, we talk about Services. They are the core concept of partitioning the workload into services. What exactly is meant by a 'service'. Why would you choose to partition it a certain way? For nanoTwitter give an example one bit of functionality that could be partitioned into a separate service and a reason why one would do this.
@@ -13,7 +13,11 @@ cat: scale
     * Can you come up with a nanoTwitter API which would require information from multiple models to be returned, and can you see why that might make sense. Think about information hiding, or efficiency, or isolation, or other considerations.
     * Please mention one or two concepts or topics from this reading that you didn't follow or would like to learn more about.
     * <%= deliverable("Find and respond to the warmups in latte") %>
+<<<<<<< HEAD
 1. <%= partbadge %> <%= codebadge %> Complete nt 0.2 as a team (See: <%= link_to_section :nt, :nt_outline %>). Write and submit a brief project update as a markdown file. What went well, what were the challenges, and what are the remaining problems. Add that to the doc subdirectory with a date in the filename. <%= team_deliverable %(nT code for **nanoTwitter 0.2** github. Zip up the directory and submit it to Latte.) %>
+=======
+1. <%= partbadge %> <%= codebadge %> **Complete nt 0.2 as a team:** See: <%= link_to_section :nt, :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
+>>>>>>> 667781c77233c767ad39888eca363af35b65621e
 
 #### Discussion
 * Review How to do Authentication in Sinatra (see <%= link_to_section :nt, :nt_outline %>)
