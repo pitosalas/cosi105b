@@ -1,21 +1,20 @@
 ---
 title: "Scaling Patterns: Caching"
 desc: Caching is one of the first, simplest ways of attacking scale
-homework: 1) Complete nT 0.4, submit brief project update
+homework: 1) Complete nT 0.4
 cat: scale
 ---
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
 
 1. <%= partbadge %> <%= codebadge %> **Complete nt 0.4 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
+1. <%= partbadge %> <%= pdfbadge %> **Presentation Topic Proposal** Each team choose a topic for their tech presentations. These are 30 minute presentations done by the team on a a complicated technical topic. See: <%= link_to_topic :tech_pres %> for more details. <%= team_deliverable "A one/two paragraph writeup on your proposed presentation." %>
 
-#### nT 0.4
-* 5 minute team discussion about your status
-* Write on a piece of paper what % of nT 0.0-nt 0.4 you have completed
-* Reference: <%= link_to_topic :nt_outline %>
-
-#### Review and background
-* <%= link_to_lecture :architecting_for_scale %>
+#### Valuable, not required, reading
+* [Redis](http://redis.io)
+* [Memcached](http://memcached.org)
+* [Amazon Elastic Cache](http://aws.amazon.com/elasticache/)
+* [Sinatra Cache](https://github.com/kematzy/sinatra-cache)
 
 #### Review: Achieving Scale
 * Measuring performance:
@@ -26,13 +25,15 @@ cat: scale
   * Deep thought
   * Identify the bottle neck
 * Action
-  * Remove the bottle neck
+  * Remove the bottleneck
 * Remember: One of the cardinal "sins" is optimizing early
   * Instead, optimize based on measurement
   * Discover which parts of your product's features is causing a scaling problem
   * Consider which of your techniques might be brought to bear
 
 <%= include_topic :scaling_caching %>
+
+<%= include_topic :redis %>
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>

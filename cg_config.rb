@@ -28,7 +28,6 @@ SECTION_CONFIG = [
   SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG,
                   bullet: :dash),
   SectionDef.new("Background", "background", type: :section),
-  SectionDef.new("NanoTwitter", "nt", type: :section),
   SectionDef.new("Topics", "topics", hidden: true, type: :section),
   SectionDef.new("Extras", "extras", hidden: true, type: :section)
 ]
