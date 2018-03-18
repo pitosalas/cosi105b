@@ -1,0 +1,18 @@
+---
+title: Tech Presentations
+---
+During 6 classes towards the end of the semester, each team will prepare and present an in depth study of a technology or principle that they have independently uncovered and chosen to apply in nanoTwitter.
+
+<%= include_topic :tech_pres %>
+
+<% tbh = TableHelper.new(:normal) %>
+<% tbh.headers("Date", "Presenters", "Topic") %>
+<% tbh.row("", "", "GraphQL") %>
+<% tbh.row("", "", "NoSQL databases") %>
+<% tbh.row("", "", "NodeJS") %>
+<% tbh.row("", "", "Micro Services and SOA") %>
+<% tbh.row("", "", "React or other cliens JS Library") %>
+<% tbh.row("", "", "Push processing and Websockets") %>
+
+
+<%= tbh.render %>
