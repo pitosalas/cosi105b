@@ -1,5 +1,5 @@
 ---
-title: "Scaling Pattern: SOA and microservices"
+title: "Scaling Pattern: SOA + µservices"
 desc: Look at applications of microservices and SOA in building scalable systems. Consider risks and benefits.
 homework: 1) Read Parnas Paper; 2) Read Microservices Article and respond to warmups; 3) Continue working on nT 0.8
 cat: scale
@@ -12,15 +12,23 @@ cat: scale
 1. **Read** This classic paper by David Parnas about modularity: [Information distribution aspects of design methodology](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2828&context=compsci). It's so old that you can see it was written with a typewriter. Can you imagine? As you read, think of *modules of a system* as meaning *microservice*.
 
 1. <%= pdfbadge %> <%= partbadge %> <%= timebadge %> **Read** This review article about [Microservices](http://martinfowler.com/articles/microservices.html). As you read, think about the following warmup questions:
-  * Modularity (a characteristic that comes in different guises) is a central concept in software design, Microservices are one way to achieve modularity. Think of some of the others?
-  * What would you say is the central characteristic of a microservice that distinguishes it from an other kind of modularity.
-  * Draw an analogy between the present paper and Parnas' paper above.
-  * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
-  * <%= deliverable "Submit your responses as a pdf to Latte" %>
+    * Modularity (a characteristic that comes in different guises) is a central concept in software design, Microservices are one way to achieve modularity. Think of some of the others?
+    * What would you say is the central characteristic of a microservice that distinguishes it from an other kind of modularity.
+    * Draw an analogy between the present paper and Parnas' paper above.
+    * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
+    * <%= deliverable "Submit your responses as a pdf to Latte" %>
 1. **Read**: [Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
 1. **Teams continue to work on nanoTwitter 0.7**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
-<%= include_topic :weekly_student_pres %>
+#### Userful but not mandatory Reading
+* [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
+* [Linux Process Management: Commands you should know](http://www.hostingadvice.com/blog/linux-process-management-commands-know/)
+* [Ruby One Liners](https://github.com/learnbyexample/Command-line-text-processing)
+* [Architecting Apps as MicroServices](https://blog.codeship.com/architecting-rails-apps-as-microservices/)
+
+#### Tech Presentation
+
+<%= callout("Tech Pres",  " Team Sassy about Redis vs. MongoDB" ) %>
 
 #### Review of SOA
 
@@ -32,7 +40,6 @@ cat: scale
   * Each running in a separate process
   * Communicating with lightweight mechanisms
   * Relying on internal REST Apis
-* See [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
 * Conway's law  simply states that
 
   "Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure" (see [Conway's Law](http://www.melconway.com/Home/Committees_Paper.html))
@@ -40,21 +47,30 @@ cat: scale
 #### Communication
 * Trade-offs in communications between services
 * "Smart endpoints and dumb pipes" - End to end principle
+
+##### "Unix Philosophy"
 * **Unix Philosophy** (See [Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)). Summarized by [Peter Salus](https://en.wikipedia.org/wiki/Peter_H._Salus): (not [Pito Salas](https://en.wikipedia.org/wiki/Pito_Salas)):
   * Write programs that do one thing and do it well.
   * Write programs to work together.
   * Write programs to handle text streams, because that is a universal interface.
 
- **\<INTERLUDE\>**
+**\<INTERLUDE\>**
 
 <%= code_begin %>
 ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
 <%= code_end %>
 
-* [Source of example](http://unix.stackexchange.com/questions/30759/whats-a-good-example-of-piping-commands-together)
-* [Using Ruby instead of Awk](http://nithinbekal.com/posts/ruby-sed-awk/)
+ * [Source of example](http://unix.stackexchange.com/questions/30759/whats-a-good-example-of-piping-commands-together)
+ * [Using Ruby instead of Awk](http://nithinbekal.com/posts/ruby-sed-awk/)
 
-**\</INTERLUDE\>**
+ **\</INTERLUDE\>**
+
+##### Famous (and valuable) Law: "Postel's Principle"
+  * Postel WROTE the early specification of TCP!
+  * Look at this [RFC #7](https://tools.ietf.org/html/std7). Wow!
+  * Often restated as the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle)
+  * Some people don't agree: [Postel's Principle is a Bad Idea](https://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea)
+<%= callout("Postel's Principle", " TCP implementations should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others.") %>
 
 * Options for communication
   * Direct REST Api Calls
