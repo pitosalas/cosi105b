@@ -7,11 +7,22 @@ cat: software design
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
 
-1. <%= pdfbadge %> Read about [Code Smells](http://martinfowler.com/bliki/CodeSmell.html) and [Code Smell](http://en.wikipedia.org/wiki/Code_smell) in wikipedia. Don't stop there. Google for Code Smells and find the most important and common ones. Examine all the code of your nT and locate two code smells that you have uncovered. Correct them and submit the diff, before and after. This is an individual deliverable! <%= deliverable "Write up what smell you found and corrected, and show the diff, before and after" %>
+1. <%= pdfbadge %> Read about [Code Smells](http://martinfowler.com/bliki/CodeSmell.html) and [Code Smell](http://en.wikipedia.org/wiki/Code_smell) in wikipedia. Don't stop there. Google for Code Smells and find the most important and common ones. Examine all the code of your nT and locate two code smells that you have uncovered. Pick serious transcgressions, not trivial fixes. Correct them and submit the diff, before and after. This is an individual deliverable! <%= deliverable "Pick a serious smell not a silly little thing. Write up what smells you found and corrected, and show the diff, before and after" %>
 1. **Teams continue to work on nanoTwitter 1.0**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
+
+#### Interesting but not required reading
+* [How to avoid making your microservices too small](https://hackernoon.com/how-to-avoid-making-your-microservices-too-small-an-interview-with-darby-frey-3eda7c5f5721)
+* [The Truth About MicroServices](https://codeburst.io/the-truth-about-microservices-8f8124913df4)
+* [How Long Is A Method](https://codeburst.io/the-truth-about-microservices-8f8124913df4)
+* [Truth About Refactoring](http://www.agiratech.com/rails-refactoring-techniques-concerns/)
+
+#### Tech Presentation
+
+<%= callout("Tech Pres",  " Team Skoozy will teach us about Services and Load Balancing" ) %>
 
 <%= include_topic :good_programming %>
 <%= include_topic :code_smells %>
+<%= include_topic :refactoring %>
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
