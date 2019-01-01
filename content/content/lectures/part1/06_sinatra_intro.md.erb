@@ -5,10 +5,8 @@ homework: 1) Study in depth [SODRR] Chapter 1, and submit warmup exercises; 2) I
 cat: web
 ---
 <%= homework_hdr %>
-**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
 1. <%= timebadge %> <%= partbadge %> **Read:** Study Service Oriented Design in Ruby and Rails \[SODDR\] Chapter 1, as you watch this video. In the video I narrate concepts and demonstrate the actual coding that is done in that chapter. It covers much of the same ground as the last tutorial, but goes a little further. Please answer the following warmup questions:
-
     * In your own words, what is a "Service"? Can you think of an example which is NOT mentioned in the book? Can you imagine an example of a "Service" that would be provided by nanoTwitter? [By the way, other words you will encounter for a "service" are a web service or a web API.]
     * ActiveRecord is an example of an ORM, Object Relational Mapper. What does an ORM do? Why is it useful? ActiveRecord is the most popular Ruby ORM. Do some googling and find another very popular Ruby ORM. (I don't have a specific one in mind, there are several popular ones to pick from.)
     * Can you explain the role of the "Client Library" in the code you wrote?
@@ -23,7 +21,6 @@ cat: web
 <%= callout("NB", " Dont overlook caveats in the following bullets") %>
 
   * Attempt to get the code to work, **but importantly, stop when you get to "Implementing the client library".**
-  * Do coding on your own computer in your <%= link_to_intro :portfolio %> in a new top level directory called `user-service`
   * Because the book is a couple of years old, there are some changes you need to keep in mind in order to get it to work on your own computer. They are all mentioned in the video but here they are again:
     1. gem is called `active_record` (not activerecord)
     1. No need to require 'rubygems' anymore (since Ruby 2.0)
@@ -35,7 +32,7 @@ cat: web
     1. I needed to run `rake db:migrate` before running `rspec spec/service_spec.rb`
     1. The first few lines of service_spec.rb change a lot. [Click here to see a working example](https://raw.githubusercontent.com/Cosi-105/sotl-user-service/master/spec/service_spec.rb)
     1. The specs the chapter tells you to add are already included in the code on your site in service_spec.rb
-  * <%= deliverable "Working code in your portfolio" %>
+  * <%= deliverable "Zip up your working code." %>
 
 {:start="3"}
 1. <%= include_topic :coffee_assignment %>
