@@ -1,8 +1,22 @@
+#### Notes before 2019
+
+Cosi105b
+- Mini assignment for Redis
+- Mini assignment for RabbitMQ
+- Try to make sure students understand the test protocol
+- Can we ditch the Test Interface
+- Something Wrong with the seed data  - some duplicate relationship record
+    - Users without ids?
+- Large early assignments
+    - One less early Ruby programs
+- Evite or similar with Redis and RabbitMQ
+- Have all students to do a front end of twitter with Sinatra
+- 
+
+
 #### Notes before 2017 Edition
 * For warmup readings, add a question: "Help me improve the readings. How much did you get out of this reading?"
 * Do leveling exercise with google form
-
-
 
 #### Notes before 2016 Edition
 
