@@ -61,3 +61,66 @@
     * Don't like to use a book for coding assignment, would like online
   * Unclear Feedback:
     * Stop Changing all the future assignments if we haven't gotten there yet.
+
+#### Notes before 2019
+
+Cosi105b
+- Mini assignment for Redis
+- Mini assignment for RabbitMQ
+- Try to make sure students understand the test protocol
+- Can we ditch the Test Interface
+- Something Wrong with the seed data  - some duplicate relationship record
+    - Users without ids?
+- Large early assignments
+    - One less early Ruby programs
+- Evite or similar with Redis and RabbitMQ
+- Have all students to do a front end of twitter with Sinatra
+- 
+
+
+#### Notes before 2017 Edition
+* For warmup readings, add a question: "Help me improve the readings. How much did you get out of this reading?"
+* Do leveling exercise with google form
+
+#### Notes before 2016 Edition
+
+- for nanotwitter, have a directory with comments and observations for each version of nt
+- look at description of final deliverables to make sure the site explanation is clear and that it includes a table with the results of the scalability tests.
+- Give students a formal spec for the results of their nanoTwitter, including scaling results, codeClimate results, and other quantitatov results
+- Your heroku site must run
+
+
+New Schedule notes
+
+- welcome
+- Ruby and Web Review
+- server fundamentals
+- protocols and formats
+- database basics
+- sinatra intro
+- persistence and web services
+
+- twitter case
+- scaling intro
+- architecting for scale
+- web services
+- cloud deployment
+-
+- scaling architectures: servers
+- scaling architectures: logging
+- scaling architectures: db partitioning
+- scaling architectures: caching
+- scaling architectures: SOA/Mircoservices
+- scaling architectures: concurrency
+
+- intro to oo
+- good programming practices
+- software design
+- refactoring
+- oo design 1
+- oo design 2
+- sw quality
+- tdd 1
+- tdd 2
+
+- Last class
