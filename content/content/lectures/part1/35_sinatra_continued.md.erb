@@ -7,44 +7,37 @@ cat: web
 <%= homework_hdr %>
 
 1. <%= partbadge %> **Read and Implement:** <%= link_to_topic :sinatra_series_1 %> and try to follow along and build the same app yourself. Now please answer these warmup questions:
-    * In your own words, what is a "Service"? Can you think of an example which is NOT mentioned in the book? Can you imagine an example of a "Service" that would be provided by nanoTwitter? [By the way, other words you will encounter for a "service" are a web service or a web API.]
-    * ActiveRecord is an example of an ORM, Object Relational Mapper. What does an ORM do? Why is it useful? ActiveRecord is the most popular Ruby ORM. Do some googling and find another very popular Ruby ORM. (I don't have a specific one in mind, there are several popular ones to pick from.)
+    * Research what RACK is and how it relates to Ruby, Sinatra, Rails or other parts of the technology stack
+    * What was the hardest part for you following the instructions and getting it all to work>
+    * <%= deliverable "1: zip up your working code; 2: respond to the above warmup questions in a pdf" %>
+1. <%= partbadge %> Install the Postgres database on your personal computer: [Postgres Installation Instructions](https://wiki.postgresql.org/wiki/Detailed_installation_guides). <%= deliverable "The output from doing this command on the commandline: `postgres ---version`" %>
 
-
-    <%= deliverable "1: zip up your working code; 2: respond to the above warmup questions" %>
-
-{:start="2"}
-1. <%= include_topic :coffee_assignment %>
-
-#### Useful Links
-* [Minitest/Spec](https://github.com/seattlerb/minitest)
-* [Sinatra Testing](http://sinatrarb.com/testing.html)
-* [Sinatra ActiveRecord Extension](https://github.com/janko-m/sinatra-activerecord)
-* [ActiveRecord Basics Guide](https://edgeguides.rubyonrails.org/active_record_basics.html)
-* [ActiveRecord Migration Guide](https://edgeguides.rubyonrails.org/active_record_migrations.html)
-
-#### Discussion
-* Discuss concepts you learned
-* Quick review of web client / server relationship (http/url/html/json)
+#### Useful but not mandatory links and readings
+* Minitest::Spec documentation: [Minitest/Spec](https://github.com/seattlerb/minitest)
+* Introduction to [Sinatra Testing](http://sinatrarb.com/testing.html)
+* Accessing Activerecord using the [Sinatra ActiveRecord Extension](https://github.com/janko-m/sinatra-activerecord)
+* Rails Guide about [ActiveRecord Basics Guide](https://edgeguides.rubyonrails.org/active_record_basics.html)
+* Rails Guide about [ActiveRecord Migration Guide](https://edgeguides.rubyonrails.org/active_record_migrations.html)
+* The readme of Sinatra is a great resource: [Sinatra Readme](http://www.sinatrarb.com/intro.html)
+* A good basic book on sinatra is: [Sinatra Up and Running](http://www.amazon.com/Sinatra-Up-Running-Alan-Harris/dp/1449304230)
 * Reminder: <%= link_to_topic :what_is_sinatra %>
 
 #### What is a web service and an SOA?
   * A web server is now used not just as a place that has web pages for people to read, but as a place that delivers a service (functionality, data, information) to other programs, without human intervention.
   * instead of returning HTML (for web browsers to render) it returns data (for other apps to use!) Such a server is often said to be delivering a *web service* or *web API*.
   * This brings the notion of modularity, isolation, information hiding all the way up to the level of full servers. And creating an application can now become the stringing together of web services, each of which might be delivered by a different company (think Amazon, Heroku, Apple, IBM)
+  * <%= link_to_topic :models %>
 
-<%= include_topic :models %>
 <%= include_topic :ar_db_mechanics %>
 
 #### Walk through some code
-* [Sinatra Intro](http://www.sinatrarb.com/intro.html)
-* [Simple Database Driven Website with Heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
 * [SOTL-simple-service](https://github.com/pitosalas/sotl-user-service)
 
-#### Sinatra References
-* The readme of Sinatra is a great resource: [Sinatra Readme](http://www.sinatrarb.com/intro.html)
-* A good basic book on sinatra is: [Sinatra Up and Running](http://www.amazon.com/Sinatra-Up-Running-Alan-Harris/dp/1449304230)
+* [Sinatra Intro](http://www.sinatrarb.com/intro.html)
+* [Simple Database Driven Website with Heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
 
+### Technologies
+<%= include_topic :sinatra_technology_options %>
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
