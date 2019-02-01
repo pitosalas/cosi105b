@@ -7,7 +7,7 @@ cat: web
 <%= homework_hdr %>
 
 1. <%= partbadge %> **Read and Implement:** <%= link_to_topic :sinatra_series_1 %> and try to follow along and build the same app yourself. Now please answer these warmup questions:
-    * Research what RACK is and how it relates to Ruby, Sinatra, Rails or other parts of the technology stack
+    * Research what RACK is and how it relates to Ruby, Sinatra, Rails or other parts of the technology  stack
     * What was the hardest part for you following the instructions and getting it all to work>
     * <%= deliverable "1: zip up your working code; 2: respond to the above warmup questions in a pdf" %>
 1. <%= partbadge %> Install the Postgres database on your personal computer: [Postgres Installation Instructions](https://wiki.postgresql.org/wiki/Detailed_installation_guides). <%= deliverable "The output from doing this command on the commandline: `postgres ---version`" %>
@@ -25,17 +25,12 @@ cat: web
 * Reminder: <%= link_to_topic :what_is_sinatra %>
 
 #### What is a web service and an SOA?
-  * A web server is now used not just as a place that has web pages for people to read, but as a place that delivers a service (functionality, data, information) to other programs, without human intervention.
-  * instead of returning HTML (for web browsers to render) it returns data (for other apps to use!) Such a server is often said to be delivering a *web service* or *web API*.
-  * This brings the notion of modularity, isolation, information hiding all the way up to the level of full servers. And creating an application can now become the stringing together of web services, each of which might be delivered by a different company (think Amazon, Heroku, Apple, IBM)
-  * <%= link_to_topic :models %>
+* A web server is now used not just as a place that has web pages for people to read, but as a place that delivers a service (functionality, data, information) to other programs, without human intervention.
+* instead of returning HTML (for web browsers to render) it returns data (for other apps to use!) Such a server is often said to be delivering a *web service* or *web API*.
+* This brings the notion of modularity, isolation, information hiding all the way up to the level of full servers. And creating an application can now become the stringing together of web services, each of which might be delivered by a different company (think Amazon, Heroku, Apple, IBM)
+* <%= link_to_topic :models %>
 <%= include_topic :ar_db_mechanics %>
 
-#### Lets look at some code
-* Follow along on your computer if you like!
-* You can find the example SOTL-simple-service in **my [Sinatra Examples](https://github.com/pitosalas/sinatra_examples) repo.**
-
-### Software Engineering and technologies
 <%= include_topic :sinatra_technology_options %>
 
 #### Next Class
