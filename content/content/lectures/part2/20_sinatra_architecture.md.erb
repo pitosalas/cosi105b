@@ -16,17 +16,6 @@ cat: web
   * A local official enters stats as the game progresses
   * Default implementation with a single "monolythic" app
   * How will things break down
-* Divide into two services: Fan user interface app
-  * All scores are stored in a static JSON file on disk, "latest_scores.json"
-  * Read only. This app never writes
-  * Nearly infinitely scalable
-* Admin app: Admin user interface
-  * Create new games
-  * Add new stats and info durng game
-  * Stored in a Postgres database
-  * Writes out new version of "latest_scores.json" once per second
-  * Always responsive, no matter what's going on on user side
-* Let's look: Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
 
 #### Review of everything so far
 1. What a web server is and how Sinatra helps you create one

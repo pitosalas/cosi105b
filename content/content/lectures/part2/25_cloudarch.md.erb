@@ -7,16 +7,21 @@ cat: nt
 <%= homework_hdr %>
 
 1. <%= zipbadge %> <%= pdfbadge %> **Read and implement:** <%= link_to_topic :sinatra_series_4 %> and try to follow along in code. Build the models and the tests, no views or routing! Look at the end of the writup for specifics on the deliverables. This is an individual project! <%= deliverable ("Zipped up code plus readme") %>
+1. <%= partbadge %> <%= pdfbadge %> Watch [Development Decisions and Architecture](https://www.driftingruby.com/episodes/development-decisions-and-architecture). Respond to the following warmup questions:
+    * What is a single point of failure and why is this good or bad? Is it something that you should avoid at all costs?
+    * What is a CDN? What are the considerations for using one?
+    * Is this video about scaling up or scaling out?
 
 ##### Ongoing work
 * **Teams continue to work on nanoTwitter**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
-#### Interesting but not required extra reading
+##### Interesting but not required extra reading
 * [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
 
+<%= include_topic :sinatra_technology_options %>
+
 #### Discussion
-* Any teams chosing to do something interesting beyond the basics?
-* Node.js?
+* Any teams choosing to do something interesting beyond the basics?
 * Additional idea for Service Oriented Architecture: Loose coupling
   * Asynchronous communication
   * If supplier is down or slow, this doesn't harm the consumer
