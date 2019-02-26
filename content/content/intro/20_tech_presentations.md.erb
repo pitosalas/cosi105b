@@ -1,27 +1,25 @@
 ---
 title: Tech Presentations
 ---
-##### Intro
+#### Tech Presentations
 
 Over the next 12 classes each student will give a techical presentation. I will reserve 30 minutes at the start of each class for the presentation. The topics can be selected from the list below or you can propose new ones. Here are the guidelines
 
 <%= include_topic :tech_pres %>
 
 <% tbh = TableHelper.new(:normal) %>
-<% tbh.headers("Date", "Presenters", "Topic") %>
-<% tbh.row("xx", "yy", "zz") %>
+<% tbh.headers("Date", "(Proposed) Presenters", "Topic") %>
+<% tbh.row("Mar 5", "Brad Nesbitt", "NodeJS - with Express, compared to Sinatra") %>
+<% tbh.row("Mar 7", "Liaman Guo", "Fat Client Architectures - React") %>
+<% tbh.row("Mar 12", "Julian Ho", "Graph Databases - dgraph Amazon Neptune, Neo4J") %>
+<% tbh.row("Mar 14", "Ye Hong", "NoSQL Databases - MongoDB") %>
+<% tbh.row("Mar 19", "Fengzhencheng Zeng", "Containerizing - Docker") %>
+<% tbh.row("Mar 21", "Aaron Gold", "Client programming languages - Elm") %>
+<% tbh.row("Mar 26", "Xiangran Zhao", "Full Text Search - ElasticSearch")%>
+<% tbh.row("Mar 28", "Chauncy Fan", "Push Processing and Web Sockets") %>
+<% tbh.row("Apr 2", "Yang Shang", "API Architectures other than REST - GraphQL") %>
+<% tbh.row("Apr 4", "Ziyu Liu", "Alternate ORMs - Sequel gem") %>
+<% tbh.row("Apr 9",  "Ari Carr", "Database Sharding and Paritioning - ActiveRecord v6") %>
+<% tbh.row("Apr 11", "Yirun Zhou", "Global Scaling Architectures") %>
+
 <%= tbh.render %>
-
-##### Potential Topics are:
-1. Fat Client Architectures - React
-1. API Architectures other than REST - GraphQL
-1. Push Processing and Web Sockets - 
-1. NoSQL Databases - MongoDB
-1. NodeJS - with Express, compared to Sinatra
-1. Database Sharding and Paritioning - ActiveRecord v6
-1. Graph Databases - Amazon Neptune, Neo4J
-1. Full Text Search - ElasticSearch
-1. Global Scaling Architecutes - Amazon Beanstalk
-1. Containerizing - Docker
-1. Client programming languages - Elm
-
