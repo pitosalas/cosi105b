@@ -12,6 +12,11 @@ cat: scale
 
 * <%= partbadge %> <%= codebadge %> **Complete nt 0.2 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable "Github repo zipped up." %>
 
+##### Useful but not mandatory reading
+* [Open Source Load Testing Tools: Which one should I use?](https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use)
+* [Top 5 Performance/Load Testing Tools in 2018](https://www.guru99.com/performance-testing-tools.html)
+
+
 #### Discussion
 * Review How to do Authentication in Sinatra (see <%= link_to_topic :nt_outline %>)
   * See: [Sinatra Authentication Example](https://sideprojectsoftware.com/blog/2015/02/22/sinatra-authentication.html) and [bcrypt for Ruby](https://github.com/codahale/bcrypt-ruby)
@@ -21,13 +26,19 @@ cat: scale
 * Questions
   * What is an API exactly?
 
-<%= include_topic :sinatra_series_5 %>
-  
-<%= include_topic :scaling %>
+#### Reviewing the reading
+* <%= link_to_topic :sinatra_series_5 %>
 
-#### Some scalability tools
-* [Open Source Load Testing Tools: Which one should I use?](https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use)
-* [Top 5 Performance/Load Testing Tools in 2018](https://www.guru99.com/performance-testing-tools.html)
+#### Work in teams
+* Using these principles, propose services for your nano twitter
+* Include: 
+  * What services can talk to what tables, specifically
+  * What your logic is for choosing those services
+* I would like to see at least one service that is not a notification service
+
+<%= callout("activity", " Come up with an initial cut, make a diagram, prepare to present to class.") %>
+ 
+<%= include_topic :scaling %>
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
