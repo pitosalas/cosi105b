@@ -1,7 +1,7 @@
 ---
 title: "Scaling Patterns: Concurrency"
 desc: "Scaling pattern: Concurrency, Background processing and asynchronous processing"
-homework: 1) Complete nT 0.5; 2) Read article closely, answer warmup questions
+homework: 1) Complete nT 0.6; 2) Read article closely, answer warmup questions
 cat: scale
 ---
 <%= homework_hdr %>
@@ -13,16 +13,17 @@ cat: scale
     * The article describes how to threads and processes to achieve concurrency as part of a design, but also introducing Background jobs as an alternative. Can you explain the difference between using threads or processes and using a background job?
     * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
     * <%= deliverable "Submit your responses as a pdf to Latte" %>
-1. <%= partbadge %> <%= codebadge %> **Complete nt 0.5 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
 
-#### Interesting, but not required, reading
+##### Interesting, but not required, reading
 * [Bullet, a gem to find and fix N+1 Query bugs](https://github.com/flyerhzm/bullet)
 * [Partial Rendering performance in Rails](https://medium.com/@coorasse/partial-rendering-performance-in-rails-101fdfb6ffb9), which has lessons for Sinatra as well!
 * [Comparing Background processing Libraries](http://www.sitepoint.com/comparing-ruby-background-processing-libraries-delayed-job/)
 * [Nobody Understands the GIL](https://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil)
 
-#### Technical Presentation
-<%= callout("Presentation", " Aaron presents about Client programming languages - Elm") %>
+##### Ongoing work
+
+* <%= partbadge %> <%= zipbadge %> <%= teambadge %> **Complete nt 0.6 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
+
 
 <%= include_topic :scaling_concur %>
 <%= include_topic :scaling_async %>

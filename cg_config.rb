@@ -15,7 +15,7 @@ COURSE_ABBREV = "cs105"
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "jan-15-2019",
   weekdays: [:tuesday, :thursday],
-  number: 27,
+  number: 30,
   start_times: ["15:30", "15:30"],
   end_times: ["16:50", "16:50"],
   start_time: "15:30",
