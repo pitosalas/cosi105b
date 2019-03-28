@@ -5,7 +5,6 @@ desc: Centrality of queuing and message passing concepts in achieving scalable a
 cat: scale
 ---
 <%= homework_hdr %>
-**Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Code
 
 1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> Read [Queues Don't Fix Overload](http://ferd.ca/queues-don-t-fix-overload.html) and [Architecting Rails as Microservice Applications](http://blog.codeship.com/architecting-rails-apps-as-microservices/?utm_source=rubyweekly&utm_medium=email) carefully. Don't worry that the article references Rails, most of the principles are general. Respond to the warmup questions.
     * Explain "back pressure" as used in the first article
@@ -13,9 +12,8 @@ cat: scale
     * When your system is designed using services (or microservices), they have to communicate with each other. If service one needs an email sent out, and asks service two to do so, somehow that has to be passed from one to two. What are some of the common ways to do this?
     * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
     * <%= deliverable "Submit your responses as a pdf to Latte" %>
-1. **Teams continue to work on nanoTwitter 0.6**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
-#### Important, but not mandatory reading
+##### Important, but not mandatory reading
 * [RabbitMQ Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
 * [Rabbit Demo (github)](https://github.com/Cosi-105/rabbit_demo)
 * [Ruby Concurrency Explained](http://merbist.com/2011/02/22/concurrency-in-ruby-explained/)
