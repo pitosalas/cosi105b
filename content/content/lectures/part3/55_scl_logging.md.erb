@@ -5,13 +5,66 @@ homework: 1)
 cat: scale
 ---
 <%= homework_hdr %>
-* Read: https://medium.freecodecamp.org/how-to-save-hours-of-debugging-with-logs-6989cc533370
+
+* Read: [How to save hours of debugging with logs](https://medium.freecodecamp.org/how-to-save-hours-of-debugging-with-logs-6989cc533370)
+* Read: [Log Everything All The Time](http://highscalability.com/log-everything-all-time)
 
 ##### Ongoing work
 * **Teams continue to work on nanoTwitter 0.8**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Tech Presentation
 <%= callout("Tech Pres",  " Ari Carr	Database Sharding and Paritioning - ActiveRecord v6" ) %>
+
+#### Monitoring and Logging
+* Similar, in fact a little hard to tell the difference
+
+#### Basics about logging
+
+##### General
+* Across languages more or less standard conventions have appeared
+* A library or gem called something like Logger: log4j, log4
+* A standard set of log levels and corresponding filtering
+* Similar appearing log output text
+
+##### Log Levels
+
+* **Debug:** fine-grained statements concerning program state, typically used for debugging (`Logger::DEBUG = 0`)
+* **Info:** informational statements concerning program state, representing program events or behavior tracking (`Logger::INFO = 2`)
+* **Warn:** statements that describe potentially harmful events or states in the program (`Logger::WARN = 2`)
+* **Error:** statements that describe non-fatal errors in the application; this level is used quite often for logging handled exceptions (`Logger::ERROR = 3`)
+* **Fatal:** statements representing the most severe of error conditions, assumedly resulting in program termination. (`Logger::FATAL = 4`)
+
+##### [Heroku logs (default)](https://devcenter.heroku.com/articles/http-routing)
+
+* Note that Heroku does a huge amount for you that otherwise you would have to worry about 
+  * Disk space for the logs
+  * Rotating file handler, with time stamps on the file
+  * Centralized log for all the parts of the app
+* Here is what the logs look like on heroku
+* Watch them with commands such as `$ heroku logs -t` and related
+* Notice that heroku automatically adds information so don't duplicate it!
+
+<%= code_begin %>
+2019-04-04T18:17:44.169212+00:00 app[web.1]: I, [2019-04-04T18:17:44.169077 #11]  INFO -- : Generating TweetTimeline for 50 lines
+
+2019-04-04T18:17:44.249469+00:00 app[web.1]: D, [2019-04-04T18:17:44.249343 #11] DEBUG -- :    (16.0ms)  SELECT "users"."id" FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = $1  [["follower_id", 6026]]
+
+2019-04-04T18:17:44.373801+00:00 app[web.1]: D, [2019-04-04T18:17:44.373457 #11] DEBUG -- :   User Load (2.5ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1  [["id", 6026]]
+
+2019-04-04T18:17:44.386413+00:00 heroku[router]: at=info method=GET path="/" host=psnano.herokuapp.com request_id=9ddd467c-2595-47b5-82d9-85f3aa226fef fwd="129.64.120.217" dyno=web.1 connect=0ms service=389ms status=200 bytes=10412 protocol=https
+<%= code_end %>
+
+##### What to log
+* When you have concurrent requests you have to annotate your log output
+* But do it in a standardized way so you can later search it
+  * Make it parsable by computer
+  * If necessary use a search engine or other service
+  * Some prefer JSON formatted logs, but then they are less easy to read
+* Performance
+  * If you log a lot, make it very very fast to log
+  * Dont format the log message ahead of time, only when you are about to post it
+
+* Log everything, all the time?
 
 
 #### Next Class
