@@ -24,21 +24,40 @@ cat: scale
 * [Linux Process Management: Commands you should know](http://www.hostingadvice.com/blog/linux-process-management-commands-know/)
 * [Ruby One Liners](https://github.com/learnbyexample/Command-line-text-processing)
 * [Architecting Apps as MicroServices](https://blog.codeship.com/architecting-rails-apps-as-microservices/)
+* [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
 
 ##### Ongoing work
 * **Teams continue to work on nanoTwitter 0.8**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 
 #### Tech Presentation
-<%= callout("Presentation", " Ziyu Liu on	Alternate ORMs - Sequel gem") %>
+<%= callout("Tech Pres",  " Ari Carr	Database Sharding and Paritioning - ActiveRecord v6" ) %>
 
+#### Review of Scalability Runoff
+* Link to the rules and process for <%= link_to_topic :scalability_runoff %> 
+* Link as a reminder of the required <%= link_to_topic :nt_test_interface %>
 
 #### SOA / Microservices / Monolith
 <img src="http://www.martinfowler.com/articles/microservices/images/sketch.png" width="500" align="right">
 
+##### Monolith
 * Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
+* What does a classic "Monolithic Web App" look like?
+  * Web Server - Processes HTTP and delivers it to app code (Puma + Sinatra, for example)
+  * App Server - (Your code, for example)
+  * Database Server - Postgres, Oracle, Mongo, etc.
+
+* Advantages
+  * Good for small-medium projects with similar teams
+  * Single code base
+  * Don't have to design, write, test, maintain service Apis
+* Disadvatages
+  * If teams are large there can be too much coupling
+  * Scaling out (if you need to) is very tough
+
+  ##### Service Oriented Architecture
 * Single application, designed as
-  * Suite of small services
+  * Suite of (small?) services
   * Each running in a separate process
   * Communicating with lightweight mechanisms
   * Relying on internal REST Apis or Queues or Both
@@ -119,25 +138,17 @@ ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
 * Retrying with backoff
 * [Circuit Breaker](http://martinfowler.com/bliki/CircuitBreaker.html)
 
-#### Exercise
-* Work in groups
-* Come up with a specific idea, with implementation details
-* One service (other than emailing) that nanoTwitter could have
-* [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
+#### Discussion
+* We have the following architecture:
+  * Service 1: Contains sinatra, processes http, displays forms etc.
+  * Service 2: Executes certain long running services (e.g. major data load), fed by a job queue
+  * Considering Service 3
+* When user tweets, how do we get that into the database?
+  * Directly within Service 1
+  * In Service 2, as a job on a general queue
+  * In a new service 3, in a job queue, dedicated to tweets
+  * In a new service 3, in a publish/subscribe queue
 
-#### Devops
-* Infrastructure management is automated as much as possible
-* CI (Continuous integration) very typical
-* Everything is "programmed" (scripts)
-  * Provisioning a server
-  * De-provisioning a server
-  * Updating software for an individual service
-  * Rollback of anything
-  * Backups and recovery
-  * Switching between data centers
-  * Monitoring and management
-* Using SSH is a sign of incomplete automation
-* Major categories of tools
 
-  #### Next Class
+#### Next Class
   * Look at homework: <%= link_to_next_lecture %>
