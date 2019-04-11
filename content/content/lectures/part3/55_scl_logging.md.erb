@@ -10,10 +10,15 @@ cat: scale
 * Read: [Log Everything All The Time](http://highscalability.com/log-everything-all-time)
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter, heading into Nt 1.0!
+* Teams continue to work on nanoTwitter, heading into Nt 1.0!
 
-#### Monitoring and Logging
+#### Monitoring, Logging, Reporting
 * Similar, in fact a little hard to tell the difference
+* There are numerous products in this general space
+* Sometimes choosing one is tricky because of partial overlap
+* NewRelic is very well known in this space
+* PaperTrail is less well known
+
 
 #### Basics about logging
 
@@ -52,17 +57,23 @@ cat: scale
 <%= code_end %>
 
 ##### What to log
-* When you have concurrent requests you have to annotate your log output
+* Using log levels, I tend to put in lots of "info" level tracing log entries
+  * These will eventually cause performance problems
+  * Design code so that if the log level is not active, the code to prepare the log entry doesnt even run
+  * In Ruby use procs or similar
+* When you have concurrent requests you have to annotate your log with something to allow the request to because
+  * User "a" says that their requests are very slow
+  * A way to trace the request through different services
 * But do it in a standardized way so you can later search it
   * Make it parsable by computer
   * If necessary use a search engine or other service
   * Some prefer JSON formatted logs, but then they are less easy to read
+  * Best practice is key=value pairs
 * Performance
-  * If you log a lot, make it very very fast to log
-  * Dont format the log message ahead of time, only when you are about to post it
-
 * Log everything, all the time?
 
+#### Monitoring - Application Performance (APM)
+* https://www.channele2e.com/software/apm/apm-infrastructure-monitoring-converge/
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
