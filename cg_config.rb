@@ -13,14 +13,14 @@ COURSE_ABBREV = "cs105".freeze
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jan-15-2019",
-  weekdays: [:tuesday, :thursday],
+  first_day: "jan-14-2020",
+  weekdays: [:tuesday, :friday],
   number: 30,
-  start_times: ["15:30", "15:30"],
-  end_times: ["16:50", "16:50"],
-  start_time: "15:30",
-  end_time: "16:50",
-  skips: ["jan-22-2019", "feb-19-2019", "feb-21-2019", "apr-23-2019", "apr-25-2019", "may-2-2019"])
+  start_times: ["12:30", "12:30"],
+  end_times: ["13:50", "13:50"],
+  start_time: "12:30",
+  end_time: "13:50",
+  skips: [])
 
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
@@ -36,3 +36,8 @@ SECTION_CONFIG = [
 STYLING_CONFIG = {bullet_style: %("font-size: 60%; width: 10px; color: grey")}.freeze
 HOME_PAGE = "/content/intro/05_syllabus.md.erb".freeze
 HELPFUL_BOX = false
+MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"],
+             ["Project Outline", "/content/topics/nt/nt_outline.md/"],
+             ["NanoTwitter", "/content/intro/15_nt_links.md/"],
+             ["Deliverables", "/content/topics/syllabus/cosi105b_final_deliverables.md/"]].freeze
+      
