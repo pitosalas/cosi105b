@@ -1,7 +1,7 @@
 require 'coursegen'
 
 # Copyright string
-COPYRIGHT_STRING = "Copyright (2014-2019) R. Pito Salas, pitosalas@brandeis.edu".freeze
+COPYRIGHT_STRING = "Copyright (2014-2020) R. Pito Salas, pitosalas@brandeis.edu".freeze
 
 # bucket for AWS Deployment of the course
 AWS_BUCKET = "cosi105b".freeze
@@ -25,8 +25,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
   SectionDef.new("Intro", "intro", type: :section, bullet: :star),
-  SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG,
-                  bullet: :dash),
+  SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
   SectionDef.new("Topics", "topics", hidden: true, type: :section),
   SectionDef.new("Extras", "extras", hidden: true, type: :section)
 ].freeze
@@ -36,8 +35,6 @@ SECTION_CONFIG = [
 STYLING_CONFIG = {bullet_style: %("font-size: 60%; width: 10px; color: grey")}.freeze
 HOME_PAGE = "/content/intro/05_syllabus.md.erb".freeze
 HELPFUL_BOX = false
-MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"],
-             ["Project Outline", "/content/topics/nt/nt_outline.md/"],
+MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"], ["Project Outline", "/content/topics/nt/nt_outline.md/"],
              ["NanoTwitter", "/content/intro/15_nt_links.md/"],
              ["Deliverables", "/content/topics/syllabus/cosi105b_final_deliverables.md/"]].freeze
-      
