@@ -10,26 +10,20 @@ cat: web
     * Research what RACK is and how it relates to Ruby, Sinatra, Rails or other parts of the technology  stack
     * What was the hardest part for you following the instructions and getting it all to work>
     * <%= deliverable "1: zip up your working code; 2: respond to the above warmup questions in a pdf" %>
-1. <%= partbadge %> Install the Postgres database on your personal computer: [Postgres Installation Instructions](https://wiki.postgresql.org/wiki/Detailed_installation_guides). <%= deliverable "The output from doing this command on the commandline: `postgres ---version`" %>
 
-#### Useful but not mandatory links and readings
-* Minitest::Spec documentation: [Minitest/Spec](https://github.com/seattlerb/minitest)
-* Introduction to [Sinatra Testing](http://sinatrarb.com/testing.html)
+##### Useful but not mandatory reading
 * Accessing Activerecord using the [Sinatra ActiveRecord Extension](https://github.com/janko-m/sinatra-activerecord)
+* Tutorial: [Simple Database Driven Website with Heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
 * Rails Guide about [ActiveRecord Basics Guide](https://edgeguides.rubyonrails.org/active_record_basics.html)
 * Rails Guide about [ActiveRecord Migration Guide](https://edgeguides.rubyonrails.org/active_record_migrations.html)
 * The readme of Sinatra is a great resource: [Sinatra Readme](http://www.sinatrarb.com/intro.html)
-* A good basic book on sinatra is: [Sinatra Up and Running](http://www.amazon.com/Sinatra-Up-Running-Alan-Harris/dp/1449304230)
-* [Sinatra Intro](http://www.sinatrarb.com/intro.html)
-* [Simple Database Driven Website with Heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)
-* Reminder: <%= link_to_topic :what_is_sinatra %>
 
-#### What is a web service and an SOA?
-* A web server is now used not just as a place that has web pages for people to read, but as a place that delivers a service (functionality, data, information) to other programs, without human intervention.
-* instead of returning HTML (for web browsers to render) it returns data (for other apps to use!) Such a server is often said to be delivering a *web service* or *web API*.
-* This brings the notion of modularity, isolation, information hiding all the way up to the level of full servers. And creating an application can now become the stringing together of web services, each of which might be delivered by a different company (think Amazon, Heroku, Apple, IBM)
-* <%= link_to_topic :models %>
-<%= include_topic :ar_db_mechanics %>
+#### Review from Capstone/Cosi166
+* Reminder: <%= link_to_topic :what_is_sinatra %>
+* Core concept from 166: <%= link_to_topic :models %>
+* Review: <%= link_to_topic :ar_db_mechanics %>
+* Introduction to [Sinatra Testing](http://sinatrarb.com/testing.html)
+* Testing with [Minitest/Spec](https://github.com/seattlerb/minitest)
 
 <%= include_topic :sinatra_technology_options %>
 
