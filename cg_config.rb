@@ -35,6 +35,7 @@ SECTION_CONFIG = [
 STYLING_CONFIG = {bullet_style: %("font-size: 60%; width: 10px; color: grey")}.freeze
 HOME_PAGE = "/content/intro/05_syllabus.md.erb".freeze
 HELPFUL_BOX = false
-MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"], ["Project Outline", "/content/topics/nt/nt_outline.md/"],
+MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"],
              ["NanoTwitter", "/content/intro/15_nt_links.md/"],
+             ["Project Outline", "/content/topics/nt/nt_outline.md/"],
              ["Deliverables", "/content/topics/syllabus/cosi105b_final_deliverables.md/"]].freeze
