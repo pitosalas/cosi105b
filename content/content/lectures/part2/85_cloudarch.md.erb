@@ -17,7 +17,10 @@ cat: nt
 ##### Interesting but not required extra reading
 * [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
 
-<%= include_topic :sinatra_technology_options %>
+#### Discussion
+* Take a look at this active_record example: [AR Example](https://github.com/pitosalas/rails_examples/tree/master/ar_associations)
+
+* <%= include_topic :sinatra_technology_options %>
 * <%= link_to_section :intro, :tech_presentations %>
 
 #### SOA, APIS, hosts, IP addresses
@@ -37,8 +40,10 @@ cat: nt
   * The client uses the binding to call the server
   * Key parameter is the ip address or dns name of the server
 * Services
-  * These are not public APIs. They are not accessible outside of the internal infrastructure
-  * Still there are APIs and often dns names
+  * A computer (a host, a vm, a droplet, a dyno) responds toa request. Call that a "server"
+  * You may have more than one of the same kind of server together responding to requests of that type
+  * These are not public IP addresses. They are not accessible outside of the internal infrastructure
+  * Still there are IP addresses and often dns names
 * Clients
   * How does the client know what dns name or ip address to use?
   * If there's only one instance ever, it could be put right into the code (MongoDb.open_database("ourdata", "12.32.33.44")
@@ -49,8 +54,6 @@ cat: nt
   * Also don't include IP addresses
   * Many approaches to dealing with this
   * Simplest is Environment Variables
-
-<%= include_topic :devops %>
 
 #### Next Class
 * Look at homework: <%= link_to_next_lecture %>
