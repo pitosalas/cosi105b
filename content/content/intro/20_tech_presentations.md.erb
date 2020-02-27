@@ -1,9 +1,14 @@
 ---
-title: Tech Presentations
+title: Technical Presentations
 ---
-#### Tech Presentations
 
-<%= include_topic :tech_pres %>
+##### Background, Purpose and Preparation
+
+In the coming weeks each student will be asked to research, prepare and present a technical topic of interest to themselves and relevant to the course materials.. I will reserve 30 minutes at the start of each class for the presentation. The topics can be selected from the list below or you can propose new ones. 
+
+* **Critical Specifics including Grading: <%= link_to_topic :tech_pres %>**
+
+##### Tech Presentations Schedule
 
 <% tbh = TableHelper.new(:normal) %>
 <% tbh.headers("Date", "(Proposed) Presenters", "Topic") %>
@@ -18,8 +23,8 @@ title: Tech Presentations
 <% tbh.row("April 3", "Matt", "Scalability in Scientific Computing") %>
 <% tbh.row("?", "?", "Client programming languages - Elm") %>
 <% tbh.row("?", "?", "API Architectures other than REST - GraphQL") %>
-<% tbh.row("?", "?", "?") %>
-
-
+<% tbh.row("?", "?", "Kubernetes") %>
+<% tbh.row("?", "?", "") %>
 <%= tbh.render %>
+
 
