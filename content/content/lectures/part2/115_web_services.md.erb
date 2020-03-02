@@ -12,14 +12,14 @@ cat: nt
     * In the context of REST APIs, what is pagination? Why would you say that pagination is a concern, and can you give some scenarios where it becomes a concern?
     * Please mention one or two concepts or topics from this reading that you didn't follow or would like to learn more about.
     * <%= deliverable "Respond to the warmups in Latte." %>
-1. <%= teambadge %> **Web Services APIs** Examine the nt Web Services (REST) API routes from <%= link_to_topic :nt_functionality %>. You will see that the general pattern is laid out, but not all permutations are explained. Evaluate them in the context of this reading. You're welcome to improve them so they follow more pragmatic REST principles.
+1. <%= teambadge %> Move your nanoTwitter (so far) from Heroku to Digital Ocean. Some of you might never have gotten onto Heroku yet. Or you may already have moved to Digital Ocean. Either case is fine. This is an experiment before I update the instructions to use Digital Ocean for future students. Here's what you need to do:
+    * Create two droplets for nanoTwitter in your project: 1) nT "front end", 2) nT "microservice TBD"
+    * Clone the repo(s) to these two droplets. Note that even though you would have distinct sets of code for each, you can still have them both in the same repo, just with different "launch" programs (i.e. either app_frontend.rb or app_microservice.rb)
+    * Create a postgres database cluster
+    * Using all you learned from the recent series of homeworks, configure your nanoTwitter as an automatically started systemctl service
+    * Connect all the "wires" by putting the right IP addresses in the right place
+    * <%= deliverable "Demonstrate the droplet structure of your new setup by making a screen recording of you demoing how things are setup through the Digital Ocean UI" %>
 
-    Now, write "REST API Documentation" for the nanoTwitter service api. Look for examples on the web for how web APIs are documented for what you think is a good format. (Here's what twitter does as an example: [Twitter statuses API](https://dev.twitter.com/rest/reference/get/statuses/retweets_of_me).
-
-    Remember that you have to state the url's "syntax" and the format of the input and output data (JSON). Your documentation should be good enough for a programmer who doesn't know anything about your app to properly access the API.
-
-    You have a few other intersting alternatives: You can use [Swagger](https://swagger.io) to document your API and actually generate code for the service and the client. Or, you can use [GraphQL](http://graphql.org) to design a totally different, modern, yet non-REST Api. Both of these options are more advanced and would be recognized as a way to make your product more advanced. <%= team_deliverable "Markdown file documentation. Submit to Latte and also store in doc/ directory of your repo." %>
-1. **Teams continue to work on nanoTwitter 0.3**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 ##### Interesting, not mandatory, reading
 * [So What's This GraphQL thing I keep hearing about?](https://medium.freecodecamp.org/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf)
@@ -28,7 +28,7 @@ cat: nt
 * [Sinatra GraphQL example](https://github.com/robinjmurphy/ruby-graphql-server-example)
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
+1. **Teams continue to work on nanoTwitter 0.3**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Tech Presentations
 <%= callout("Presentation", " Daniel will present about Push Processing and Web Sockets") %>
