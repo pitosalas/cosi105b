@@ -1,3 +1,26 @@
+#### Sprint 2020
++ Has many useful technologies and concepts
++ Demos and hands on coding
++ Many discussions
++ Interesting and useful topics
++ Implementing SOA on projects
++ Learn about scalability
++ Detailed instruction
++ Lots of new tools
++ Love the topics. Gives more real world experience
++ Relaxed and ecnouraging learning environment
++ Lab
++ Guest speaker
++ Julian (TA) is very helpful
+- Would like to see more sample code to learn from
+- More web basics (nobody has taken 166 sniff sniff
+- More linux
+- More demos on how to create an SOA
+- Would like the homework for a class topic to come on the day of the topic rather than before
+- Sometimes the warmup participation quetions have already been discussed in class
+- Unclear instructions on homework
+
+
 #### Cosi105 Spring 2015 Feedack from students
 * On home works
 * More detailed feedback
