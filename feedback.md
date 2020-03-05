@@ -1,4 +1,4 @@
-#### Sprint 2020
+#### Spring 2020
 + Has many useful technologies and concepts
 + Demos and hands on coding
 + Many discussions
