@@ -1,19 +1,12 @@
 ---
-title: "Concurrency and Thread Safety"
+title: "Concurrency 2"
 desc: Continuing the discussion on this critical aspect of scaling 
 homework: 1) Self and Peer Assessments
 cat: scale
 ---
 <%= homework_hdr %>
 
-1. **Read** [How do I know if my app is Thread-safe or not?](https://bearmetal.eu/theden/how-do-i-know-whether-my-rails-app-is-thread-safe-or-not/)**
-
-1. **Read** [No one understands the GIL](https://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil)
-
-1. **Look at** [Ruby Concurrency Gems](https://github.com/ruby-concurrency)
-
-{:start="3"}
-<%= include_topic :hw_self_peer_assess_v3 %>
+1. **Read these useful papers** [How do I know if my app is Thread-safe or not?](https://bearmetal.eu/theden/how-do-i-know-whether-my-rails-app-is-thread-safe-or-not/) and [No one understands the GIL](https://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil) and [Ruby Concurrency Gems](https://github.com/ruby-concurrency). Write a test program from one of these readings to see for yourself what happens.
 
 ##### Ongoing work
 * **Teams continue to work on nanoTwitter, heading into Nt 1.0!**
@@ -21,7 +14,7 @@ cat: scale
 ##### Tech Presentation
 <%= callout("Tech Pres",  " Yirun Zhou on Global Scaling Architectures" ) %>
 
-#### Concurrency and Threads and Processes
+#### Tuning Threads and Processes
 
 ##### Why
 * In tuning an application for performance you need to configure the web server, app server, database server
@@ -62,11 +55,7 @@ end
 * Without regard to thread or to Sinatra dependency
 * Terrible idea! You are sharing mutable state between threads
 
-<%= discussion "Would this be a problem if your web server was running just one thread?" %>
-
-<%= discussion "How about if it was running two processes, one thread each?" %>
-
-<%= discussion "So how would you safely share the current user when you are multi threaded?" %>
+<%= discussion "Would this be a problem if your web server was running just one thread? How about if it was running two processes, one thread each? So how would you safely share the current user when you are multi threaded?" %>
 
 #### Ruby
 * None of the core data structures of MRI Ruby are thread safe (except for `Queue`)
@@ -93,21 +82,9 @@ end
 * Ruby class variables and class instance variables (see example above)
 * Memoization can accidentally get you in trouble (it happened to me)
 
-##### Ruby Constants
-* `LOG_LEVEL = 1`
-* Are not really constant; yes you get an interprer warning but that's all
-
-##### Use Ruby Freeze 
-* `LOG_LEVEL = 1.freeze`
-
-##### Environment variables
-* Are just globals
-
 ##### Session
 * As a SESSION belongs to one request
 * Thread safe from the perspective of a multi-threaded web server
-
-#### Web Servers (Ruby)
 
 ##### Puma
 * 1 or more `workers` - they are processes
