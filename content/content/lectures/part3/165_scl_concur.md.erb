@@ -1,12 +1,12 @@
 ---
 title: "Concurrency"
 desc: "Scaling pattern: Concurrency, Background processing and asynchronous processing"
-homework: 1) Complete nT 0.6; 2) Read article closely, answer warmup questions
+homework: 1) Read article closely, answer warmup questions
 cat: scale
 ---
 <%= homework_hdr %>
 
-1. <%=partbadge %> <%= pdfbadge %>**Read**: Here's an excellent article introducing the topics we will be discussing today: [Ruby Concurrency and Parllelism: A Practical Tutorial](http://www.toptal.com/ruby/ruby-concurrency-and-parallelism-a-practical-primer). It's a little complicated, but really really worth your time and effort. You will learn a lot. As you read, consider the following warmup questions:
+1. <%= pdfbadge %> **Read**: Here's an excellent article introducing the topics we will be discussing today: [Ruby Concurrency and Parllelism: A Practical Tutorial](http://www.toptal.com/ruby/ruby-concurrency-and-parallelism-a-practical-primer). It's a little complicated, but really really worth your time and effort. You will learn a lot. As you read, consider the following warmup questions:
     * What are the critical differences, or what is the most critical difference between threads and processes?
     * In the article they explain that thread pools are a way around a problems and errors which arise when a program just creates a bunch of new threads to do the work. Can you explain why?
     * The article describes how to threads and processes to achieve concurrency as part of a design, but also introducing Background jobs as an alternative. Can you explain the difference between using threads or processes and using a background job?
