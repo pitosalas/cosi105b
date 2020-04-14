@@ -35,8 +35,7 @@ cat: scale
 * But a class instance variable (.e. `def self do this thing; @a = 100`) is asking for trouble
 
 ##### Mini case study
-<%= code_begin %>
-class CurrentState
+<%= source_begin "language-ruby" %>class CurrentState
   def self.current_user_id
      @current_user_id
   end
@@ -49,8 +48,7 @@ class CurrentState
      @current_user ||= User.find(@current_user_id)
   end
 end
-
-<%= code_end %>
+<%= source_end %>
 
 * A convenient way to globally share the current user
 * Without regard to thread or to Sinatra dependency
