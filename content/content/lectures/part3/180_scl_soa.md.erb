@@ -6,17 +6,13 @@ cat: scale
 ---
 <%= homework_hdr %>
 
-<img src="https://site.xavier.edu/polt/typewriters/franklin.jpg" align="right" width="256">
+<img src="https://site.xavier.edu/polt/typewriters/franklin.jpg" align="right" width="100">
 
-1. **Read**: Two important papers - no deliverable:
-    * This classic paper by David Parnas about modularity: [Information distribution aspects of design methodology](https://pdfs.semanticscholar.org/17f0/6e0b0f9d3abcf5771957246e8de847d39b49.pdf). It's so old that you can see it was written with a typewriter. Can you imagine? As you read, think of *modules of a system* as meaning *microservice*. 
-    * Also read "Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
-
-1. **Read** This review article about [Microservices](http://martinfowler.com/articles/microservices.html). As you read, think about the following warmup questions:
-    * Modularity (a characteristic that comes in different guises) is a central concept in software design, Microservices are one way to achieve modularity. Think of some of the others?
-    * What would you say is the central characteristic of a microservice that distinguishes it from an other kind of modularity.
-    * Draw an analogy between the present paper and Parnas' paper above.
-    * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
+1. **Read**: Three interesting papers - no deliverable. First, this classic paper by David Parnas about modularity: [Information distribution aspects of design methodology](https://pdfs.semanticscholar.org/17f0/6e0b0f9d3abcf5771957246e8de847d39b49.pdf). It's so old that you can see it was written with a typewriter. Can you imagine? As you read, think of *modules of a system* as meaning *microservice*. Next read ["Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/) and also this review article about [Microservices](http://martinfowler.com/articles/microservices.html). As you read, think about the following warmup questions:
+      * Modularity (a characteristic that comes in different guises) is a central concept in software design, Microservices are one way to achieve modularity. Think of some of the others?
+      * What would you say is the central characteristic of a microservice that distinguishes it from an other kind of modularity.
+      * Draw an analogy between the present paper and Parnas' paper above.
+      * Mention 2 topics or explanations or ideas from the reading that are still confusing. If none of it is confusing, which two ideas or concepts that you think are particularly interesting? Please make it clear whether it's a confusion or an insight.
 
 ##### Userful but not mandatory Reading
 * [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
@@ -24,6 +20,7 @@ cat: scale
 * [Ruby One Liners](https://github.com/learnbyexample/Command-line-text-processing)
 * [Architecting Apps as MicroServices](https://blog.codeship.com/architecting-rails-apps-as-microservices/)
 * [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
+* Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
 
 ##### Ongoing work
 * **Teams continue to work on nanoTwitter, heading into Nt 1.0!**
@@ -31,13 +28,12 @@ cat: scale
 #### Today
 * Link to the rules and process for <%= link_to_topic :scalability_runoff %> 
 * Link as a reminder of the required <%= link_to_topic :nt_test_interface %>
-* 
+* Demonstrate with Julian and Yifan what the scalability runoff will be like
 
 #### SOA / Microservices / Monolith
-<img src="http://www.martinfowler.com/articles/microservices/images/sketch.png" width="500" align="right">
+<img src="http://www.martinfowler.com/articles/microservices/images/sketch.png" width="350" align="right">
 
 ##### Monolith
-* Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
 * What does a classic "Monolithic Web App" look like?
   * Web Server - Processes HTTP and delivers it to app code (Puma + Sinatra, for example)
   * App Server - (Your code, for example)
@@ -51,7 +47,7 @@ cat: scale
   * If teams are large there can be too much coupling
   * Scaling out (if you need to) is very tough
 
-  ##### Service Oriented Architecture
+##### Service Oriented Architecture
 * Single application, designed as
   * Suite of (small?) services
   * Each running in a separate process
@@ -96,8 +92,8 @@ ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
   * Some people don't agree: [Postel's Principle is a Bad Idea](https://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea)
 <%= callout("Postel's Principle", " TCP implementations should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others.") %>
 
-#### Design Considerations
-<img src="http://www.martinfowler.com/articles/microservices/images/decentralised-data.png" width="500" align="right">
+##### Design Considerations
+<img src="http://www.martinfowler.com/articles/microservices/images/decentralised-data.png" width="400" align="right">
 
 * Evolutionary Design
   * Start with 1 big service (Majestic Monolith)
