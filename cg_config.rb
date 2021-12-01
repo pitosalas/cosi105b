@@ -13,15 +13,17 @@ COURSE_ABBREV = "cs105".freeze
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jan-14-2020",
-  weekdays: [:tuesday, :friday],
-  number: 30,
-  start_times: ["12:30", "12:30"],
-  end_times: ["13:50", "13:50"],
-  start_time: "12:30",
-  end_time: "13:50",
-  skips: ['feb-18-2020', 'feb-21-2020', 'mar-24-2020', 'apr-7-2020', 'apr-10-2020']
+  first_day: "jan-18-2022",
+  weekdays: [:tuesday, :thursday],
+  start_times: ["15:30", "15:30"],
+  end_times: ["17:00", "17:00"],
+  number: 27,
+  skips: [],
+  start_time: "15:30",
+  end_time: "17:00"
 )
+
+
 # Sections in the right hand margin of the page
 SECTION_CONFIG = [
   SectionDef.new("Intro", "intro", type: :section, bullet: :star),
@@ -39,3 +41,36 @@ MENULINKS = [["TOC", "/content/intro/10_course_toc.md/"],
              ["NanoTwitter", "/content/intro/15_nt_links.md/"],
              ["Project Outline", "/content/topics/nt/nt_outline.md/"],
              ["Deliverables", "/content/topics/syllabus/cosi105b_final_deliverables.md/"]].freeze
+
+# SECRET_PAGE is where we go when the url is /secret
+SECRET_PAGE = "/content/extras/secret.md.erb"
+
+# SLIDES
+SLIDES_CONFIG = {
+  # Ignore_selectors ignore certain html elements from rendering in the slides.
+  ignore_selectors: ['li ul'],
+
+  # Reveal.js specific options
+  # See: https://revealjs.com/config/
+  revealjs_opts: {
+    transition: 'slide',
+    width: 960,
+    height: 900
+  }
+}.freeze
+
+# SEARCH
+#
+# Coursegen uses DocSearch by Algolia (https://docsearch.algolia.com/) to
+# provide site-wide full-text search functionality.
+#
+# In order for search to function, you need to replace with your own
+# search API key, and name of your index from Algolia.
+# For details, please refer to https://github.com/pitosalas/coursegen/blob/master/README.md.
+SEARCH_CONFIG = {
+  api_key: '88d805f90d7c75673db100409098f729',
+  index_name: 'cosi105',
+  # APP_ID is only used if you are running DocSearch on your own.
+  app_id: '',
+  debug: false
+}.freeze

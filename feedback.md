@@ -1,4 +1,20 @@
+
 #### Spring 2020
+
+##### End of Semester
+
+* Homeworks sometimes take multiple links to get to the important info
+* Some students wish there was more content specific homework each week
+* In practice students dont really start coding nT in earnest until week 10 or so
+* Therefore actually have more coding and less reading homeworks up to 
+* Homework instructions are sometimnes unclear and added to Latte too late (my fault)
+* Maybe cover a little less and go a little more in depth on the approaches I use
+* In other words rely less on nT as a project assignment
+* Maybe even have forced nT homework checkpoints giving them a starting point that is "dumb".
+
+
+
+##### Mid semester
 + Has many useful technologies and concepts
 + Demos and hands on coding
 + Many discussions
