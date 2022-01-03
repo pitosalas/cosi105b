@@ -6,9 +6,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.1.0/dist/theme/league.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/white.css" id="theme">
   <!--[if lt IE 9]>
   <script src="https://unpkg.com/reveal.js@4.0.2/lib/js/html5shiv.js"></script>
   <![endif]-->
@@ -34,9 +34,7 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section data-markdown data-separator="^<slide_break></slide_break>"  
-             data-separator-notes="<slide_hide></slide_hide>"
-class="scrollable">
+    <section data-markdown data-separator="^<slide_break></slide_break>" class="scrollable">
       <textarea data-template>
         <%= yield %>
       </textarea>
@@ -55,7 +53,6 @@ class="scrollable">
     Reveal.initialize({
         minScale: 0.2,
         maxScale: 1.4,
-        width: 800,
 
         markdown: {
             breaks: true

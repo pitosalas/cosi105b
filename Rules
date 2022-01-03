@@ -12,8 +12,36 @@ compile '/extras/**/*' do
   nil
 end
 
+compile '/content/topics/robotcode/**/*' do
+  nil
+end
+
+compile '/content/scripts/**/*' do
+  nil
+end
+
 compile '/**/*.ical.erb' do
   filter :erb
+end
+
+compile '/**/*/*.cg' do
+  if item[:status] != "hidden"
+    filter :handle_shortcodes
+    filter :kramdown, coderay_line_numbers: nil
+    layout '/course.*'
+  else
+    nil
+  end
+end
+
+compile '/**/*.cg', rep: :slides do
+  if item[:status] != "hidden"
+    filter :handle_shortcodes
+    layout '/slides.*'
+    write item.identifier.without_ext + '/slides.html'
+  else
+    nil
+  end
 end
 
 compile '/**/*.{md,ical}.erb' do
@@ -38,26 +66,6 @@ compile '/**/*.md.erb', rep: :slides do
   end
 end
 
-compile '/**/*/*.cg' do
-  if item[:status] != "hidden"
-    filter :handle_shortcodes
-    filter :kramdown, coderay_line_numbers: nil
-    layout '/course.*'
-  else
-    nil
-  end
-end
-
-compile '/**/*.cg', rep: :slides do
-  if item[:status] != "hidden"
-    filter :handle_shortcodes
-    layout '/slides.*'
-    write item.identifier.without_ext + '/slides.html'
-  else
-    nil
-  end
-end
-
 compile '/**/*' do
   if item.binary? || item[:status] == "hidden"
     nil
@@ -75,10 +83,6 @@ end
 
 route HOME_PAGE, rep: :slides do
   '/slides.html'
-end
-
-route SECRET_PAGE do
-  '/secret.html'
 end
 
 route '/**/*' do
