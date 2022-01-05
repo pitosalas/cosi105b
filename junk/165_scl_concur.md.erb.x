@@ -21,14 +21,14 @@ cat: scale
 
 ##### Ongoing work
 
-* <%= partbadge %> <%= zipbadge %> <%= teambadge %> **Complete nt 0.6 as a team:** See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
+* <%= partbadge %> <%= zipbadge %> <%= teambadge %> **Complete nt 0.6 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
 
 ##### Tech Presentation
-:callout :small, "Presentation", " Yifan Leng - Kubernetes"/
+<%= callout("Presentation", " Yifan Leng - Kubernetes") %>
 
 <%= include_topic :scaling_concur %>
 <%= include_topic :scaling_async %>
 
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

@@ -16,7 +16,7 @@ cat: scale
 * [Twitter Clone using Redis](https://redis.io/topics/twitter-clone) ([code](https://github.com/danlucraft/retwis-rb))
 
 ##### Ongoing work
-* **Teams Complete and submit nanoTwitter 0.4**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams Complete and submit nanoTwitter 0.4**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Review: Achieving Scale
 * Measuring performance:
@@ -38,4 +38,4 @@ cat: scale
 <%= include_topic :redis %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

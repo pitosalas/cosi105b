@@ -25,7 +25,7 @@ cat: scale
   * Display tweets of people you are following
   
 #### Tech Presentations
-:callout :small, "Presentation", " Yifei will present about NoSQL Databases - MongoDB"/
+<%= callout("Presentation", " Yifei will present about NoSQL Databases - MongoDB") %>
 
 #### Monitoring, Logging, Reporting
 * Similar, in fact a little hard to tell the difference
@@ -92,4 +92,4 @@ cat: scale
 * [3 Ways to detect slow queries in Postgres](https://www.cybertec-postgresql.com/en/3-ways-to-detect-slow-queries-in-postgresql/)
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

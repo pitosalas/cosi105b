@@ -17,8 +17,7 @@ cat: nt
     * to "reply": Commenting on someone's tweet
     * to "retweet": Display someone elses tweet on your timeline.
      <%= deliverable "A more technical explanation of exactly what each command does. For example, if I comment -- where does that comment appear? What exactly is displayed on the homepage? Etc. Submit as a pdf." %>
-1. <%= zipbadge %> <%= pdfbadge %> **Read and Implement:** :topic_link :sinatra_series_2 %> and try to follow along and build the same app yourself. **Do the exercises** at the end of the reading and answer the warmup questions. 
-<%= deliverable "Warmups response as a pdf; and your code as a .zip." %>
+1. <%= zipbadge %> <%= pdfbadge %> **Read and Implement:** <%= link_to_topic :sinatra_series_2 %> and try to follow along and build the same app yourself. **Do the exercises** at the end of the reading and answer the warmup questions. <%= deliverable "Warmups response as a pdf; and your code as a .zip." %>
 1. <%= include_topic :coffee_assignment %>
 
 #### Useful but not required reading
@@ -27,7 +26,7 @@ cat: nt
 #### Discussion
 * Looking at the definitions of twitter features
 * Discuss what the twitter UI should look like
-* Discuss :topic_link :nt_outline /
+* Discuss <%= link_to_topic :nt_outline %>
 * Discuss the structure of a [Sinatra Program](http://sinatrarb.com/intro.html)  - classic and modular
 * Discuss the role of [Rack](https://github.com/rack/rack) and Rackup
 
@@ -35,4 +34,4 @@ cat: nt
 <%= include_topic :sinatra_series_3 %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

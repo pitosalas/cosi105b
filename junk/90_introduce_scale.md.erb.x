@@ -6,13 +6,12 @@ cat: scale
 ---
 <%= homework_hdr %>
 
-1. <%= partbadge %> <%= pdfbadge %> Read and think about :topic_link :sinatra_series_5 and answer the warmup questions that are stated there. <%= deliverable "Pdf with your responses" %>
-2. <%= partbadge %> <%= pdfbadge %> Read :topic_link :hw_service_api_0 and complete topic_link :hw_service_api_1 
-<%= deliverable "Pdf with your responses" %>
+1. <%= partbadge %> <%= pdfbadge %> Read and think about <%= link_to_topic :sinatra_series_5 %> and answer the warmup questions that are stated there. <%= deliverable "Pdf with your responses" %>
+2. <%= partbadge %> <%= pdfbadge %> Read <%= link_to_topic :hw_service_api_0 %> and complete <%= link_to_topic :hw_service_api_1 %> <%= deliverable "Pdf with your responses" %>
 
 ##### Ongoing work
 
-* <%= partbadge %> <%= zipbadge %> **Complete nt 0.2 as a team:** See: :topic_link :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable "Github repo zipped up." /
+* <%= partbadge %> <%= zipbadge %> **Complete nt 0.2 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable "Github repo zipped up." %>
 
 ##### Useful but not mandatory reading
 * [Open Source Load Testing Tools: Which one should I use?](https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use)
@@ -20,18 +19,18 @@ cat: scale
 
 
 #### Discussion
-* Review How to do Authentication in Sinatra (see :topic_link :nt_outline /)
+* Review How to do Authentication in Sinatra (see <%= link_to_topic :nt_outline %>)
   * See: [Sinatra Authentication Example](https://sideprojectsoftware.com/blog/2015/02/22/sinatra-authentication.html) and [bcrypt for Ruby](https://github.com/codahale/bcrypt-ruby)
   * Let's look at my code
-* Review the Test Interface (see :topic_link :nt_test_interface /)
+* Review the Test Interface (see <%= link_to_topic :nt_test_interface %>)
   * Demonstrate and look at my code
 * Questions
   * What is an API exactly?
-* :section_link :background, :tech_presentations 
+* <%= link_to_section :background,  :tech_presentations %>
 
 #### Reviewing the reading
-* :topic_link :sinatra_series_5 /
-* :topic_link :devops /
+* <%= link_to_topic :sinatra_series_5 %>
+* <%= link_to_topic :devops %>
 
 #### Work in teams
 * Using these principles, propose services for your nano twitter
@@ -40,7 +39,7 @@ cat: scale
   * What your logic is for choosing those services
 * I would like to see at least one service that is not a notification service
 
-:callout :small, "activity", " Come up with an initial cut, make a diagram, prepare to present to class."/
+<%= callout("activity", " Come up with an initial cut, make a diagram, prepare to present to class.") %>
  
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

@@ -1,0 +1,13 @@
+---
+title: Internet and Web Review
+desc: Review fundamentals of how the web works
+cat: web
+slides: true
+---
+:h3 Quick Review of Cosi166 (in case you forgot!)
+
+* How: :topic_link :how_web_servers_work
+* Basics of the :topic_link :internet_basics
+* Basics of networking and the web: :topic_link :www 
+
+:lecture_end

@@ -1,0 +1,50 @@
+---
+title: What is scaling?
+desc: There are technical and non-technical factors
+slides: true
+cat: scale
+---
+:h3 What do we mean by Scaling?
+
+* This course is about *scaling* but what do we mean by that?
+* There are several "funny" definitions in the dictionary
+* Having to do with weights and fish
+* In our world it means something like "increased capacity"
+* This could be organizational, operational or in our case, technical
+:callout :small, "e.g.", "You made some money making jewelry for your friends but will it scale? OR I can grade these by hand but that won't scale when I have 200 students!"
+
+:slide_title What do we mean by scaling?
+
+* Your program works not just with 100K of data but with 100Gig of data
+* Excel can handle a model not just with 300 rows but with 300K rows
+* Your web site works when 10 friends are using it but fails miserably when 5,000 people are using it simultaneously
+
+:slide_title There's a life cycle
+
+* Sin: "Premature Optimization"
+* Don't assume that you know why
+* You are probably wrong!
+* Always measure to determine where the bottleneck is
+* You will never find the "last" bottleneck.
+* You will remove bottlenecks until the system scales to your requirements
+* "You're not Google" (or facebook, or instagram, or ...)
+
+:slide_title Software Aspects
+
+* You need to start with an idea of your goal
+* Usually expressed as:
+    1. Simultaneous users
+    2. Performance under load
+    3. Expensive operations
+* Needs to have a target range that can be measured
+* Search for bottlenecks
+* Tradeoff with cost (people or equipment)
+* There are Best practices
+
+:slide_title Operations aspects
+
+* Availability and performance
+
+
+:slide_title Team aspects
+

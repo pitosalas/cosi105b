@@ -17,10 +17,10 @@ cat: scale
 * [Sinatra Best Practices](https://blog.carbonfive.com/2013/06/24/sinatra-best-practices-part-one/)
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter 0.4**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams continue to work on nanoTwitter 0.4**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Tech Presentations
-:callout :small, "Presentation", " Lin will present about Containerizing - Docker"/
+<%= callout("Presentation", " Lin will present about Containerizing - Docker") %>
 
 #### Discussion
 * Lets look at some of your diagrams. Who wants to volunteer?
@@ -29,4 +29,4 @@ cat: scale
 <%= include_topic :tuning_scalability %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

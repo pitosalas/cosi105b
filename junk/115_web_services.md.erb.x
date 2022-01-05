@@ -16,9 +16,9 @@ cat: nt
     * Create three droplets for nanoTwitter in your project: 1) nT "front end", 2) nT "Back End" and 3) nT "microservice TBD"
     * Clone the repo(s) to these two droplets. Note that even though you would have distinct sets of code for each, you can still have them both in the same repo, just with different "launch" programs (i.e. either app_frontend.rb or app_microservice.rb)
     * Create a postgres database cluster
-    * Using all you learned from the recent series of homeworks, configure your nanoTwitter as an automatically started systemctl service. Hint: :topic_link :hw_service_api_2 /
+    * Using all you learned from the recent series of homeworks, configure your nanoTwitter as an automatically started systemctl service. Hint: <%= link_to_topic :hw_service_api_2 %>
     * Connect all the "wires" by putting the right IP addresses in the right place.
-    * Configure a Github Actions CI/CD pipeline in your team's repo so that it auto deploys on new changes. Hint: :topic_link :hw_service_api_3 /
+    * Configure a Github Actions CI/CD pipeline in your team's repo so that it auto deploys on new changes. Hint: <%= link_to_topic :hw_service_api_3 %>
     * <%= deliverable "Demonstrate the droplet structure of your new setup by making a screen recording of you demoing how things are setup through the Digital Ocean UI" %>
 
 
@@ -29,12 +29,12 @@ cat: nt
 * [Sinatra GraphQL example](https://github.com/robinjmurphy/ruby-graphql-server-example)
 
 ##### Ongoing work
-1. **Teams continue to work on nanoTwitter 0.3**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+1. **Teams continue to work on nanoTwitter 0.3**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Tech Presentations
-:callout :small, "Presentation", " Daniel will present about Push Processing and Web Sockets"/
+<%= callout("Presentation", " Daniel will present about Push Processing and Web Sockets") %>
 
 <%= include_topic :rest_web_services %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

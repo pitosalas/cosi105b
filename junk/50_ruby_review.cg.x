@@ -1,16 +1,9 @@
 ---
 title: Ruby Review
 desc: Remind ourselves about Ruby
-homework: 1) Complete first draft ofprogramming assignment
-cat: programming
-homework: 1) First draft of IMS
+slides: true
 ---
-
-<%= homework_hdr %>
-
-1. <%= partbadge %> <%= zipbadge %> **Programming:** Begin <%= link_to_topic :pa_interactive_music %>. This assignment is designed to have you practice and demonstrate your ruby programming skills. It has no complicated algorithms, but you will have to know how to design a program, design a few classes, use a gem, process user input. <%= deliverable "First draft of solution, zip up the directory and submit to Latte." %>
-
-#### Ruby Live Coding Demonstration
+:h2 Ruby Live Coding Demonstration
 * <%= link_to_topic :ruby_intro_tut %>
 * <%= link_to_topic :classes_tut %>
 * <%= link_to_topic :inheritance_tut %>

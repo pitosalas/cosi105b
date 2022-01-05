@@ -9,7 +9,7 @@ cat: scale
 * Nothing for today. **Start looking at Thursday's deliverables!**
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams continue to work on nanoTwitter**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 ##### Useful but not mandatory reading
 * There is a lot of debated around Service objects. This is one up to date view: [3 Tenets of Service Objects in Ruby](https://hackernoon.com/the-3-tenets-of-service-objects-c936b891b3c2) 
@@ -23,16 +23,16 @@ cat: scale
 * Please write down: What do you think is valuable; What do you want to see more of; What would you like to see less of
 
 ##### Tech Presentations
-:callout :small, "Presentation", " Anyan will present about Fat Client architectures - React"/
+<%= callout("Presentation", " Anyan will present about Fat Client architectures - React") %>
 
 ##### Testing in the world of SOA
-* :topic_link :testing_intro /
-* :topic_link :testing_reasons /
-* :topic_link :money_class_test_example /
-* :topic_link :testing_services /
-* :topic_link :testing_pyramid /
-* :topic_link :mocking /
-* :topic_link :testing_data /
+* <%= link_to_topic :testing_intro %>
+* <%= link_to_topic :testing_reasons %>
+* <%= link_to_topic :money_class_test_example %>
+* <%= link_to_topic :testing_services %>
+* <%= link_to_topic :testing_pyramid %>
+* <%= link_to_topic :mocking %>
+* <%= link_to_topic :testing_data %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

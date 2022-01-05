@@ -16,4 +16,4 @@ cat: web
 <%= include_topic :data_modeling %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

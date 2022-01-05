@@ -19,13 +19,13 @@ cat: software design
 * [Is Mathematics a Science?](http://www.arachnoid.com/is_math_a_science/)
 
 #### Today
-* Let's take a look at the :topic_link :cosi105b_final_deliverables /
-* Let's take a look at :topic_link :scalability_runoff /
+* Let's take a look at the <%= link_to_topic :cosi105b_final_deliverables %>
+* Let's take a look at <%= link_to_topic :scalability_runoff %>
 * Dry Run of Scalability Runoff
 
 ##### Effectiveness
-* What does this mean: :topic_link :softw_engineering_brief /
-* How do be effective: :topic_link :se_rules_of_thumb /
+* What does this mean: <%= link_to_topic :softw_engineering_brief %>
+* How do be effective: <%= link_to_topic :se_rules_of_thumb %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

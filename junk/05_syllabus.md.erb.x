@@ -31,7 +31,7 @@ Cosi21a and Cosi166b - Capstone, or permission of the instructor, are required f
 
 ### Pre-work
 
-This course moves fast and so it's crucial that you review the following pre-work. Depending on how long ago you completed Cosi166 (Capstone) this might be more or less necessary. Also you might have a new computer or changed your config. Review :topic_link :cosi105b_prework
+This course moves fast and so it's crucial that you review the following pre-work. Depending on how long ago you completed Cosi166 (Capstone) this might be more or less nnecessary. Also you might have a new computer or changed your config. Review :topic_link :cosi105b_prework /
 
 :topic_include :syllabus_change_policy
 

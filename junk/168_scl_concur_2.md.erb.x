@@ -6,7 +6,7 @@ cat: scale
 ---
 <%= homework_hdr %>
 
-1. <%= teambadge %> <%= pdfbadge %><%= zipbadge %> **Implement Validation API** See :topic_link :hw_105_validation_api /. <%= deliverable "Specified in linked homework" %>.
+1. <%= teambadge %> <%= pdfbadge %><%= zipbadge %> **Implement Validation API** See <%= link_to_topic :hw_105_validation_api %>. <%= deliverable "Specified in linked homework" %>.
 1. **Read these useful papers** [How do I know if my app is Thread-safe or not?](https://bearmetal.eu/theden/how-do-i-know-whether-my-rails-app-is-thread-safe-or-not/) and [No one understands the GIL](https://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil) and [Ruby Concurrency Gems](https://github.com/ruby-concurrency). Write a test program from one of these readings to see for yourself what happens.
 
 ##### Ongoing work
@@ -15,7 +15,7 @@ cat: scale
 ##### Today
 <%= callout("Tech Pres",  " Matt on Scalability in Scientific Computing" ) %>
 * Status of projects, status of Validation API
-* Continue :section_link :lectures, :scl_concur  at Asynchronous Processing
+* Continue <%= link_to_section :lectures, :scl_concur %> at Asynchronous Processing
 * Continue here about Threads and Processes and Thread Safety
 
 
@@ -97,4 +97,4 @@ end
   * Thread safety problems can Architectures
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

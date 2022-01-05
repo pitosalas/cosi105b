@@ -6,12 +6,11 @@ homework: 1) Continue working on nT0.5
 ---
 <%= homework_hdr %>
 
-1. <%= zipbadge %> complete :topic_link :hw_service_api_2
-<%= deliverable "Your code zipped up, submitted it to Latte" %>
+1. <%= zipbadge %> complete <%= link_to_topic :hw_service_api_2 %> <%= deliverable "Your code zipped up, submitted it to Latte" %>
 
 ##### Ongoing work
 
-* **Teams continue to work on nanoTwitter 0.3**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams continue to work on nanoTwitter 0.3**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 ### Guest Speaker
 
@@ -20,4 +19,4 @@ homework: 1) Continue working on nT0.5
 Today he will focus on the technical and architectural aspects of scalability.
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

@@ -17,10 +17,10 @@ cat: scale
 
 ##### Ongoing work
 
-* <%= partbadge %> <%= zipbadge %> <%= teambadge %> **Complete nt 0.3 as a team:** See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
+* <%= partbadge %> <%= zipbadge %> <%= teambadge %> **Complete nt 0.3 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
 
 ##### Tech Presentations
-:callout :small, "Presentation", " Xiaojing will present about API Architectures other than REST - GraphQL"/
+<%= callout("Presentation", " Xiaojing will present about API Architectures other than REST - GraphQL") %>
 
 #### Today: General Notes on Review of nt0.x
 * There should be a test/ directory with tests written prefarably in Minitest although RSpec is ok too
@@ -42,11 +42,11 @@ cat: scale
 * When displaying a single page for some reason takes a lot of time?
 * What are your goals for nanoTwitter?
 
-:callout :small, "Discuss", " Each team have a discussion and report out where you think you have to be careful about scaling and what techniques or ideas you have which may help (or harm) scale."/
+<%= callout("Discuss", " Each team have a discussion and report out where you think you have to be careful about scaling and what techniques or ideas you have which may help (or harm) scale.") %>
 
 
 ### Load Testing
 <%= include_topic :nt_load_testing %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

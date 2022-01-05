@@ -21,15 +21,15 @@ cat: scale
 * [Gem for Sharding](https://github.com/thiagopradi/octopus)
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter 0.6**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams continue to work on nanoTwitter 0.6**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 #### Tech Presentations
-:callout :small, "Presentation", " Jingdi on Full Text Search - ElasticSearch"/
+<%= callout("Presentation", " Jingdi on Full Text Search - ElasticSearch") %>
 
 #### Today
 * Please delete (right now) any droplet you are not using
 * What to do if "there's not a lot of coding for me to do?!"
-  * See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage
+  * See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage
   * How is your test coverage?
   * Have you tried running loader.io? (next week!)
   * How can you go "beyond the minimum?"
@@ -39,4 +39,4 @@ cat: scale
 <%= include_topic :scaling_db_partitioning %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

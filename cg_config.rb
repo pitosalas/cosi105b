@@ -1,7 +1,10 @@
 require 'coursegen'
 
+AUTHOR_NAME = 'R. Pito Salas'
+AUTHOR_EMAIL = 'rpsalas@brandeis.edu'
+
 # Copyright string
-COPYRIGHT_STRING = "Copyright (2014-2020) R. Pito Salas, pitosalas@brandeis.edu".freeze
+COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}"
 
 # bucket for AWS Deployment of the course
 AWS_BUCKET = "cosi105b".freeze
@@ -17,7 +20,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   weekdays: [:tuesday, :thursday],
   start_times: ["15:30", "15:30"],
   end_times: ["17:00", "17:00"],
-  number: 27,
+  number: 30,
   skips: [],
   start_time: "15:30",
   end_time: "17:00"
@@ -28,6 +31,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 SECTION_CONFIG = [
   SectionDef.new("Intro", "intro", type: :section, bullet: :star),
   SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
+  SectionDef.new("Background", "background", type: :section, bullet: :star),
   SectionDef.new("Topics", "topics", hidden: true, type: :section),
   SectionDef.new("Extras", "extras", hidden: true, type: :section)
 ].freeze

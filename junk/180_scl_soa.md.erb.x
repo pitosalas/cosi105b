@@ -26,8 +26,8 @@ cat: scale
 * **Teams continue to work on nanoTwitter, heading into Nt 1.0!**
 
 #### Today
-* Link to the rules and process for :topic_link :scalability_runoff / 
-* Link as a reminder of the required :topic_link :nt_test_interface /
+* Link to the rules and process for <%= link_to_topic :scalability_runoff %> 
+* Link as a reminder of the required <%= link_to_topic :nt_test_interface %>
 * Demonstrate with Julian and Yifan what the scalability runoff will be like
 
 #### SOA / Microservices / Monolith
@@ -90,7 +90,7 @@ ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
   * Look at this [RFC #7](https://tools.ietf.org/html/std7). Wow!
   * Often restated as the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle)
   * Some people don't agree: [Postel's Principle is a Bad Idea](https://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea)
-:callout :small, "Postel's Principle", " TCP implementations should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others."/
+<%= callout("Postel's Principle", " TCP implementations should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others.") %>
 
 ##### Design Considerations
 <img src="http://www.martinfowler.com/articles/microservices/images/decentralised-data.png" width="400" align="right">
@@ -143,4 +143,4 @@ ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
 
 
 #### Next Class
-  :lecture_end
+  * Look at homework: <%= link_to_next_lecture %>

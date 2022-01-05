@@ -6,14 +6,14 @@ homework: 1) Service API homework 3 (1 and 2 already completed)
 ---
 <%= homework_hdr %>
 
-1. <%= pdfbadge %> complete :topic_link :hw_service_api_3 %> <%= deliverable "Pdf with your responses" /
+1. <%= pdfbadge %> complete <%= link_to_topic :hw_service_api_3 %> <%= deliverable "Pdf with your responses" %>
 
 ##### Topics today
-* Continue with :topic_link :sinatra_series_5 /
-* More about :topic_link :devops /
+* Continue with <%= link_to_topic :sinatra_series_5 %>
+* More about <%= link_to_topic :devops %>
 * Demonstrate automation with [Runbook](https://github.com/braintree/runbook), [System Automation](https://medium.com/braintree-product-technology/https-medium-com-braintree-product-technology-runbook-be6f072cfc0d)
-* How to think about :topic_link :scaling /
-* The mighty :topic_link :monolith /
+* How to think about <%= link_to_topic :scaling %>
+* The mighty <%= link_to_topic :monolith %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>

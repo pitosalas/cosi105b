@@ -7,8 +7,8 @@ cat: web
 
 <%= homework_hdr %>
 
-1. **Read:** :topic_link :sinatra_series_4 / and try to follow along in code. Build the same app yourself.
-1. <%= partbadge %> <%= teambadge %> <%= zipbadge %> **Complete nt 0.1 as a team:** See: :topic_link :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) /
+1. **Read:** <%= link_to_topic :sinatra_series_4 %> and try to follow along in code. Build the same app yourself.
+1. <%= partbadge %> <%= teambadge %> <%= zipbadge %> **Complete nt 0.1 as a team:** See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) %>
 
 #### Walk through of a basic scenario
 * Baseball scoring application - First cut
@@ -32,8 +32,8 @@ cat: web
 1. HTTP and it's different Verbs like GET, PUT, POST etc.
 
 #### Discussion
-* :topic_link :sinatra_series_4 /
+* <%= link_to_topic :sinatra_series_4 %>
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>
  

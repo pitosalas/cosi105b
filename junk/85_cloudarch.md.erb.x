@@ -12,7 +12,7 @@ cat: nt
     * Is this video about scaling up or scaling out?
 
 ##### Ongoing work
-* **Teams continue to work on nanoTwitter**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
+* **Teams continue to work on nanoTwitter**. See: <%= link_to_topic :nt_outline %> for detailed submission instructions and specifics for this stage.
 
 ##### Interesting but not required extra reading
 * [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
@@ -20,8 +20,8 @@ cat: nt
 #### Discussion
 
 * Take a look at this active_record example: [AR Example](https://github.com/pitosalas/rails_examples/tree/master/ar_associations)
-* :topic_link :sinatra_technology_options /
-* :section_link :background, :tech_presentations 
+* <%= link_to_topic :sinatra_technology_options %>
+* <%= link_to_section :background, :tech_presentations %>
 
 #### SOA, APIS, hosts, IP addresses
 * Service Oriented Architectures
@@ -56,4 +56,4 @@ cat: nt
   * Simplest is Environment Variables
 
 #### Next Class
-:lecture_end
+* Look at homework: <%= link_to_next_lecture %>
