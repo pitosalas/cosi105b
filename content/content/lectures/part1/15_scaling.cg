@@ -1,17 +1,15 @@
 ---
-title: What is scaling?
+title: What is Scalability?
 desc: There are technical and non-technical factors
 slides: true
 cat: scale
 ---
-:h3 What do we mean by Scaling?
+:h3 What do we mean by Scalability?
 
-* This course is about *scaling* but what do we mean by that?
-* There are several "funny" definitions in the dictionary
-* Having to do with weights and fish
-* In our world it means something like "increased capacity"
+* This course is about *Scalability* but what do we mean by that?
+* From a dictionary: "the capacity to be changed in size or scale"
 * This could be organizational, operational or in our case, technical
-:callout :small, "e.g.", "You made some money making jewelry for your friends but will it scale? OR I can grade these by hand but that won't scale when I have 200 students!"
+:callout :small, "e.g.", "&#8226;   You made some money making jewelry for your friends but will it scale? <br/>&#8226;   I can grade these by hand but that won't scale when I have 200 students!"
 
 :slide_title What do we mean by scaling?
 
@@ -38,13 +36,26 @@ cat: scale
     3. Expensive operations
 * Needs to have a target range that can be measured
 * Search for bottlenecks
+* Engineering for scalability is not free
 * Tradeoff with cost (people or equipment)
 * There are Best practices
 
 :slide_title Operations aspects
 
-* Availability and performance
+* Similarly there are goals
+* Usually includes 
+    1. Availability
+    1. Freshness
+    1. Support
+* Availability sometimes comes as "Terms of Service"
+* Reliability of the infrastructure and quality of the software
+* Timely response to temporary load variability
+
+:slide_title Development Process aspects
+
+* Automated testing 
+* Continuous integration, testing and deployment
+* Design for maintainability
 
 
-:slide_title Team aspects
-
+:lecture_end

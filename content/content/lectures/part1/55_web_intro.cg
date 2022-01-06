@@ -9,5 +9,8 @@ slides: true
 * How: :topic_link :how_web_servers_work
 * Basics of the :topic_link :internet_basics
 * Basics of networking and the web: :topic_link :www 
+* Core concept from 166: :topic_link :models
+* Review: :topic_link :ar_db_mechanics
+* Testing with [Minitest/Spec](https://github.com/seattlerb/minitest)
 
 :lecture_end

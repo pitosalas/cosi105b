@@ -47,10 +47,10 @@ div.discussionbox {
 }
 
 div.callout {
-  border: 2px dotted rgba(93, 181, 206, 0.877);
+  border: 2px dotted rgba(219, 20, 20, 0.877);
   border-radius: 7px;
   margin-top: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 100px;
   margin-left: 70px;
   margin-right: 70px;
   padding: 20px;
@@ -60,14 +60,15 @@ div.callout {
 }
 
 .callout-badge {
-  background-color: #007bff;
+  background-color: rgba(219, 20, 20, 0.877);
+  color: white;
   border-radius: 5px;
-  padding: 4px;
-  margin-right: 5px;
+  padding: 5px 8px 3px 3px;
+  margin: 5px 5px 5px 0px;
 }
 
 div.callout-big {
-  
+  background-color: grey;  
 }
 
 
