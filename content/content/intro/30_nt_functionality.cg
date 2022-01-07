@@ -1,0 +1,7 @@
+---
+title: NanoTwitter Functionality
+desc: Specification of what you will be developing
+slides: true
+cat: nt
+---
+:topic_include :nt_functionality
