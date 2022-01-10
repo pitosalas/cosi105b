@@ -1,16 +1,22 @@
 ---
 title: nanoTwitter
 desc: All about nanoTwitter
+slides: true
 ---
 Welcome to nanoTwitter. You will be working with a team of 2  students (changes from year to year) on creating this application using Ruby and Sinatra. In doing this you will be applying advanced testing, deployment and scaling techniques. The sections below outline the project in further detail
 
-#### nanoTwitter
+* Functionality: :topic_link :nt_functionality
+* Implementation sequence:
+    1. :topic_link :nt_begin
+    2. :topic_link :nt_storage
+    3. :topic_link :nt_ui
+    4. :topic_link :nt_authentication
+    5. :topic_link :nt_core
+    6. :topic_link :nt_test_api
 
-* We will not be creating a total clone of Twitter of course. But the key functionality, user interface, routes and details will all be there. They are described in detail in :topic_link :nt_functionality /
-* In order to help you in your project planning, a general outline is provided. It is certainly not the only way to organize it and you may vary from it as you decide to. Here is the :topic_link :nt_outline /
-* There are different ways of designing the nanoTwitter application. In this link we review some of the considerations and provide some guidelines: :topic_link :nt_arch /
+:slide_title Important Readings and Resources
 
-#### Important Readings and Resources
+These readings will be assigned or referenced during the semester. They are here just to pull them all together in one place to make them easier to find again.
 
 * [Twitter: From Ruby on Rails to the JVM](http://youtu.be/ohHdZXnsNi8)
 * [Real Time Delivery Architecture at Twitter](http://www.infoq.com/presentations/Real-Time-Delivery-Twitter)
