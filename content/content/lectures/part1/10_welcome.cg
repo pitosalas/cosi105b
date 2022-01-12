@@ -13,7 +13,7 @@ slides: true
 :slide_title About this course
 
 * What is this course about and how is it different from the prerequisite [Cosi166b - Capstone in Software Engineering](http://cosi166b.s3-website-us-west-2.amazonaws.com)?
-* Heres what you should learn in this course: :section_link :intro,  :cosi105b_goals
+* Heres what you should learn in this course: :topic_link :cosi105b_goals
 * Why do I think the content of this course is important? Why might you find it important and useful?
 * Could this course change your life? YES!
  
@@ -25,7 +25,7 @@ slides: true
 
 * Let's take a tour of the web site
 * Yes there is a fair bit of homework
-* Here's more information about :topic_from_section :intro, :cosi105b_grading
+* Here's more information about :topic_link :cosi105b_grading
 
 :slide_title Project
 
