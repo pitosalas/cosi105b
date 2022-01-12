@@ -1,24 +1,9 @@
 ---
 title: Service Oriented Architecure
 desc: We start going in to more complicated core architectures
-homework: 1) Read and respond to article
 cat: nt
+slides: true
 ---
-<%= homework_hdr %>
-
-1. <%= partbadge %> <%= pdfbadge %> Watch [Development Decisions and Architecture](https://brandeis.box.com/s/0b85lgfmzn380vsejkdr724a292dg26w). Respond to the following warmup questions:
-    * What is a single point of failure and why is this good or bad? Is it something that you should avoid at all costs?
-    * What is a CDN? What are the considerations for using one?
-    * Is this video about scaling up or scaling out?
-
-##### Ongoing work
-* **Teams continue to work on nanoTwitter**. See: :topic_link :nt_outline / for detailed submission instructions and specifics for this stage.
-
-##### Interesting but not required extra reading
-* [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
-
-#### Discussion
-
 * Take a look at this active_record example: [AR Example](https://github.com/pitosalas/rails_examples/tree/master/ar_associations)
 * :topic_link :sinatra_technology_options /
 * :section_link :background, :tech_presentations 

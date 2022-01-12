@@ -2,21 +2,18 @@
 title: Starting to think about scaling
 desc: Sinatra, Service Oriented Architectures and scaling
 cat: web
+slides: true
 ---
 
-<%= homework_hdr %>
-
-1. <%= partbadge %> <%= teambadge %> <%= zipbadge %> **Complete nt 0.1 as a team:** See: :topic_link :nt_outline %> for detailed submission instructions and specifics for this stage. <%= team_deliverable %(Github repo zipped up.) /
-
-#### Walk through of a basic scenario
+:slide_title Walk through of a basic scenario
 * Baseball scoring application - First cut
   * Millions of fans are constantly refreshing page to see current score in real time as the game progresses
   * A local official enters stats as the game progresses
-  * Default implementation with a single "monolythic" app
+  * Default implementation with a single "monolithic" app
   * How will things break down
 * Assuming:
   * variable t = total number of teams in this league (guess 100)
-  * variable s = number of games happening simultatnuously (guess: 4)
+  * variable s = number of games happening simultaneously (guess: 4)
   * Given a scoreboard app written in Sinatra 
     * What is a good assumption for the number of times per second the page will refresh?
 
@@ -25,7 +22,7 @@ cat: web
 1. Meaning of the URL
 1. ActiveRecord as the bridge between Ruby and the relational database
 1. The relationship between the client and the server
-1. How Unit testing is done with Mintest/Spec et al.
+1. How Unit testing is done with Minitest/Spec et al.
 1. The idea of Test Driven Development
 1. HTTP and it's different Verbs like GET, PUT, POST etc.
 
