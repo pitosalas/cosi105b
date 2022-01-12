@@ -1,0 +1,11 @@
+---
+title: nanoTwitter and REST APIs
+desc: How to think about Web Services API designs and documentation
+cat: nt
+---
+#### Tech Presentations
+:callout :small, "Presentation", " Daniel will present about Push Processing and Web Sockets"/
+
+:topic_include include_topic :rest_web_services
+
+:lecture_end

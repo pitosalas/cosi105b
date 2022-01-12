@@ -1,0 +1,13 @@
+---
+title: Scalability, continued
+desc: Examining what scalability means
+slides: true
+cat: scale
+---
+:h3 Topics today
+
+* More about :topic_link :devops
+* How to think about :topic_link :scaling
+* The mighty :topic_link :monolith
+
+:lecture_end

@@ -1,10 +1,10 @@
 ---
 title: Introduction to Scale
 desc: What does scalability mean? What do scalability problems look like?
-homework: 1) Read about Scalability and Design in Sinatra; 2) Complete Service API - Cloud; 3) Complete work on nanoTwitter 0.2
 cat: scale
+slides: true
 ---
-#### Discussion
+:h3 Discussion
 * Review How to do Authentication in Sinatra (see :topic_link :nt_outline /)
   * See: [Sinatra Authentication Example](https://sideprojectsoftware.com/blog/2015/02/22/sinatra-authentication.html) and [bcrypt for Ruby](https://github.com/codahale/bcrypt-ruby)
   * Let's look at my code
@@ -14,18 +14,17 @@ cat: scale
   * What is an API exactly?
 * :section_link :background, :tech_presentations 
 
-#### Reviewing the reading
+:slide_title Reviewing the reading
 * :topic_link :scaling_api_design
 * :topic_link :devops
 
-#### Work in teams
+:slide_title Work in teams
 * Using these principles, propose services for your nano twitter
 * Include: 
   * What services can talk to what tables, specifically
   * What your logic is for choosing those services
 * I would like to see at least one service that is not a notification service
 
-:callout :small, "activity", " Come up with an initial cut, make a diagram, prepare to present to class."/
+:callout :small, "activity", " Come up with an initial cut, make a diagram, prepare to present to class."
  
-#### Next Class
 :lecture_end
