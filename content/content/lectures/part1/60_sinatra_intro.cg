@@ -4,12 +4,10 @@ desc: Sinatra is a ruby application server
 cat: web
 slides: true
 ---
-
-* :topic_link :what_is_sinatra
+* :topic_include :what_is_sinatra
+* :topic_include :sinatra_technology_options
 
 * :topic_link :hands_on_sinatra_demo
-
-* :topic_link :sinatra_technology_options
 
 
 :lecture_end

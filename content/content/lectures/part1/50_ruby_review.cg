@@ -1,32 +1,30 @@
 ---
-title: Ruby Review
-desc: Remind ourselves about Ruby
+title: Cosi166 Quick Bullets
+desc: Remind ourselves about Ruby and the web
 cat: programming
 slides: true
 ---
-:h2 Ruby Live Coding Demonstration
+
+:slide_title Quick Review of Ruby
 
 * :topic_link :ruby_intro_tut
 * :topic_link :classes_tut
 * :topic_link :inheritance_tut
+* :topic_link :ruby_reminders
+* Testing with [Minitest/Spec](https://github.com/seattlerb/minitest)
 
-:slide_title Ruby Reminders
-* spaces not tabs, 2 spaces per tab
-* Classes are CamelCased
-* method_names and variable_names are lower case, with underlines
-* filenames are lower case with underlines, named after the top_level_class.rb
-* Classes should be less than 100 lines long
-* Methods should be less than 15 lines long
-* No standalone code or definitions. Everything should be part of a class
-* No global variables
-* Instance variables are always private
-* Don't use @@foo
-* instead of a method called "display" on a class, add a method called to_s which returns the class state as a text string. That way you can do a puts on it.
+:slide_title Quick review of how the web works
 
-#### Live coding
+* How: :topic_link :how_web_servers_work
+* Basics of the :topic_link :internet_basics
+* Basics of networking and the web: :topic_link :www 
+* Core concept from 166: :topic_link :models
+* Review: :topic_link :ar_db_mechanics
+
+:slide_title  Live coding
 * Lets do this program: :topic_link :pa_code_classes_2
 
-#### Discussions and questions
+:slide_title Discussions and questions
   * Everyone takes 5 minutes to write down 2 ruby questions on paper
   * Round Robin questions from beginning
 
