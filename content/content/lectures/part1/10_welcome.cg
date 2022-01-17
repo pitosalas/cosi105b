@@ -4,24 +4,27 @@ desc: Introductions and logistics
 cat: general
 slides: true
 ---
-:slide_title Introductions!
-
-* Introduce Pito, and how I ended up here. Look at: :topic_link :pitofaq
-* Why do I do this? My commitment to teaching and student learning.
-* TAs introduce themselves
-
-:slide_title About this course
+:slide_title Welcome!
 
 * What is this course about and how is it different from the prerequisite [Cosi166b - Capstone in Software Engineering](http://cosi166b.s3-website-us-west-2.amazonaws.com)?
+* Why is the requirement that way and why did I loosen it?
 * Heres what you should learn in this course: :topic_link :cosi105b_goals
 * Why do I think the content of this course is important? Why might you find it important and useful?
 * Could this course change your life? YES!
  
-:slide_title In-class Quiz
+:slide_title Overall Course Structure
+* Two lectures a week
+* Work on teams 
+* NanoTwitter semester long project
 
-* 20 Minutes -- **[Click here and begin NOW!](https://goo.gl/forms/GLuMts66D4zsFSWo1)**
+:slide_title Course Resources
 
-:slide_title Logistics
+* [Cosi105 Slack Channels](https://cosi105b.slack.com)
+* Meet the TAs: 
+    * Bishal Bral
+    * Susan Li
+* Ad-hoc Office Hours
+* Latte vs. This web site + Gradescope
 
 * Let's take a tour of the web site
 * Yes there is a fair bit of homework
@@ -30,7 +33,7 @@ slides: true
 :slide_title Project
 
 * All students will work in teams on their version of :topic_link :nt_outline
-* We will form teams of exactly 2 students.
+* We will form teams of exactly 2 students - - each team must have one student who took 166
 * Notes about :topic_link :working_in_teams
 
 :lecture_end 
