@@ -8,8 +8,8 @@ slides: true
 
 * 20 Minutes -- **[Click here and begin NOW!](https://goo.gl/forms/GLuMts66D4zsFSWo1)**
 
-* :topic_include :what_is_sinatra
-* :topic_include :sinatra_technology_options
+:topic_include :what_is_sinatra
+:topic_include :sinatra_technology_options
 
 * :topic_link :hands_on_sinatra_demo
 
