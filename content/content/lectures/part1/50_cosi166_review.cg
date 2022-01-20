@@ -1,0 +1,72 @@
+---
+title: Cosi166 Quick Bullets
+desc: Remind ourselves about Ruby and the web
+cat: programming
+slides: true
+---
+:slide_title Git/Github
+* Unless you are experienced, I recommend avoiding creating branches
+* At the start it's easy to get into trouble
+* These are commands you should be very familiar with
+    1. git init
+    1. git clone
+    1. git commit
+    1. git add
+    1. git status
+    1. git push
+    1. git pull
+* See :topic_link :git
+
+:slide_title What a web server does
+* Reductionist view
+* Client sends url, server returns html
+:topic_include :how_web_servers_work
+* Review of :topic_link :internet_basics
+* Review of design and operation of: :topic_link :www 
+
+:slide_title HTTP
+* HTTP verbs
+    1. GET - get representation of resource at URI
+    1. PUT - replace representation of resource at URI
+    1. POST - Add a new resource
+    1. others 
+* :topic_link :http
+
+:slide_title URI Routes and routing
+* Components of a URI `http://cs.brandeis.edu:3000/accounting/homepage?format=summary`
+    * protocol - `http://`
+    * hostname - `cs.brandeis.edu`
+    * optional port number - `:3000`
+    * path: `/accounting/homepage`
+    * optional query string: `?format=summary`
+* Routing: Web Server parses the URI and calls the appropriate code to handle it
+* See :topic_link :uri
+
+:slide_title Relational Database
+* Tables
+* Rows
+* Primary keys
+* Foreign keys
+* Postgres
+* Review: :topic_link :ar_db_mechanics
+
+:slide_title Deploying application to Heroku
+
+:slide_title Models, Views, Controllers
+* Core concept from 166: :topic_link :models
+
+* Ruby language: syntax, gems, bundler
+* :topic_link :ruby_intro_tut
+* :topic_link :classes_tut
+* :topic_link :inheritance_tut
+* :topic_link :ruby_reminders
+* Testing with [Minitest/Spec](https://github.com/seattlerb/minitest)
+
+:slide_title  Live coding
+* Lets do this program: :topic_link :pa_code_classes_2
+
+:slide_title Discussions and questions
+* Everyone takes 5 minutes to write down 2 ruby questions on paper
+* Round Robin questions from beginning
+
+:lecture_end
