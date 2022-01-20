@@ -11,7 +11,6 @@ slides: true
 :topic_include :what_is_sinatra
 :topic_include :sinatra_technology_options
 
-* :topic_link :hands_on_sinatra_demo
-
+:topic_include :hands_on_sinatra_demo
 
 :lecture_end

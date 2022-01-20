@@ -4,12 +4,12 @@ desc: There are technical and non-technical factors
 slides: true
 cat: scale
 ---
-:h3 What do we mean by Scalability?
+:slide_bigtitle What do we mean by Scalability?
 
 * This course is about *Scalability* but what do we mean by that?
 * From a dictionary: "the capacity to be changed in size or scale"
 * This could be organizational, operational or in our case, technical
-:callout :small, "e.g.", "&#8226;   You made some money making jewelry for your friends but will it scale? <br/>&#8226;   I can grade these by hand but that won't scale when I have 200 students!"
+:callout :small, "e.g.", "You made some money making jewelry for your friends but will it scale? ... I can grade these by hand but that won't scale when I have 200 students!"
 
 :slide_title What do we mean by scaling?
 
@@ -27,18 +27,39 @@ cat: scale
 * You will remove bottlenecks until the system scales to your requirements
 * "You're not Google" (or facebook, or instagram, or ...)
 
-:slide_title Software Aspects
+:slide_bigtitle Lets form some teams
+
+* How is it going with Ruby so far?
+* Let see if we can form some teams of 3 students... how?
+* Form 3 random Zoom Breakouts. Get to know each other
+* Each breakout will go for 5 minutes and then we do it again
+
+:slide_bigtitle  Software Aspects
 
 * You need to start with an idea of your goal
 * Usually expressed as:
     1. Simultaneous users
     2. Performance under load
     3. Expensive operations
+    4. Rate of operations
 * Needs to have a target range that can be measured
 * Search for bottlenecks
 * Engineering for scalability is not free
 * Tradeoff with cost (people or equipment)
 * There are Best practices
+
+:slide_title Hardware Aspects
+
+* Scaling "up" versus "out"
+* Have an intuition about the speed and latency of different media
+* What's the difference? 
+* Compare speeds of:
+    1. memory
+    1. Local disk
+    1. SSD Solid State disks
+    1. NAS Network Attached Storage
+    1. Local LAN communications
+    1. Internet  communications
 
 :slide_title Operations aspects
 
@@ -53,9 +74,10 @@ cat: scale
 
 :slide_title Development Process aspects
 
+* Embrace change because it will happen
+* Agile methodologies
 * Automated testing 
 * Continuous integration, testing and deployment
 * Design for maintainability
-
 
 :lecture_end

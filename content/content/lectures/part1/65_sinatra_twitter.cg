@@ -12,6 +12,4 @@ slides: true
 * Discuss the structure of a [Sinatra Program](http://sinatrarb.com/intro.html)  - classic and modular
 * Discuss the role of [Rack](https://github.com/rack/rack) and Rackup
 
-:topic_include :scaling_SOA
-
 :lecture_end
