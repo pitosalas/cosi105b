@@ -5,9 +5,10 @@ cat: nt
 slides: true
 ---
 :slide_title Review 
+
 * Take a look at this active_record example: [AR Example](https://github.com/pitosalas/rails_examples/tree/master/ar_associations)
-* :topic_link :sinatra_technology_options
-* :section_link :background, :tech_presentations 
+
+:topic_include :sinatra_technology_options
 
 :slide_title Service Oriented Architectures
 

@@ -1,0 +1,10 @@
+---
+title: Introduction to Scale
+desc: What does scalability mean? What do scalability problems look like?
+cat: scale
+slides: true
+---
+:slide_title Reviewing the reading
+* :topic_link :scaling_api_design
+* :topic_link :devops
+ :lecture_end
