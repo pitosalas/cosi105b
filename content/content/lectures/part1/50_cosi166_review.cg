@@ -54,7 +54,6 @@ slides: true
 
 :slide_title Models, Views, Controllers
 * Core concept from 166: :topic_link :models
-
 * Ruby language: syntax, gems, bundler
 * :topic_link :ruby_intro_tut
 * :topic_link :classes_tut
@@ -63,10 +62,7 @@ slides: true
 * Testing with [Minitest/Spec](https://github.com/seattlerb/minitest)
 
 :slide_title  Live coding
-* Lets do this program: :topic_link :pa_code_classes_2
-
-:slide_title Discussions and questions
-* Everyone takes 5 minutes to write down 2 ruby questions on paper
-* Round Robin questions from beginning
+* Sinatra intro practice: :topic_link :hands_on_sinatra_demo
+* Or, Ruby intro practice :topic_link :pa_code_classes_2
 
 :lecture_end

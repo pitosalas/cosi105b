@@ -4,12 +4,12 @@ desc: Sinatra is a ruby application server
 cat: web
 slides: true
 ---
-:h3 Whoops! In Class Quiz
+:h3 Logistics
 
-* 20 Minutes -- **[Click here and begin NOW!](https://goo.gl/forms/GLuMts66D4zsFSWo1)**
+* What to do if you are unable or late submitting an assignment
+* What to do if you need an excused absence
+* Remember we are **in person** next week. Room: Shapiro Science Center 014
 
 :topic_include :what_is_sinatra
-
-:topic_include :hands_on_sinatra_demo
 
 :lecture_end

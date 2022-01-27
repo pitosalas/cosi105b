@@ -4,12 +4,15 @@ desc: Introduction to Twitter and nanoTwitter
 cat: nt
 slides: true
 ---
+:h3 Whoops! In Class Quiz
+
+* 20 Minutes -- **[Click here and begin NOW!](https://goo.gl/forms/GLuMts66D4zsFSWo1)**
+
+
 :h3 Discussions on Twitter
 
 * Looking at the definitions of twitter features
 * Discuss what the twitter UI should look like
 * Discuss :section_link :intro, :nanotwitter detailed overview
-* Discuss the structure of a [Sinatra Program](http://sinatrarb.com/intro.html)  - classic and modular
-* Discuss the role of [Rack](https://github.com/rack/rack) and Rackup
 
 :lecture_end
