@@ -1,0 +1,12 @@
+---
+title: Deploying to the  Cloud
+desc: How is the cloud a central part of modern software engineering?
+cat: scale
+---
+<%= include_topic :continuous_integ_deployment %>
+
+<%= include_topic :feature_switches %>
+
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>
