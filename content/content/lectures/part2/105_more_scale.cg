@@ -9,5 +9,6 @@ cat: scale
 * More about :topic_link :devops
 * How to think about :topic_link :scaling
 * The mighty :topic_link :monolith
+* Agility in features :topic_link :feature_switches
 
 :lecture_end
