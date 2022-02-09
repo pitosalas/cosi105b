@@ -4,21 +4,22 @@ desc: Guest Speaker Osamah Mandawi
 cat: general
 slides: true
 ---
-:slide_title Guest Speaker from Hubspot
+:h3 Guest Speaker from Hubspot
 :topic_include :osamah_mandawi
 
-:slide_title Topics
-* what is Hubspot and why is scaling important?
-* what languages and technologies are used most?
-* what is reactive vs. preventative?
-* what is the current / or previous / database structure?
-* there must be many different patterns depending on the hubspot application; which are the common ones?
-* how did you know that the issue was the database and you had to have a more grannular data store?
-* what does that mean anyway?
-* how is the change accomplished without downtime?
-* how do you coordinate the transition. 
-* How long will the transition process itself (once the code has been written and tested?)
-* how many people are involved, from what groups?
-* what is the new architecture for storage?
-* why do you believe that will alleviate the scaling issues?
-:lecture_end
+:slide_bigtitle Talk
+* Osamah highly recommends this [article about scalability:](https://product.hubspot.com/blog/how-we-built-our-stack-for-shipping-at-scale)
+
+:slide_title Context
+* HubSpot’s product
+* My current team
+
+:slide_title Scalability
+* Guidelines and patterns 
+* Day to day practices
+
+:slide_title Scaling
+* Problems I’ve encountered
+* Solutions
+* Caveats with solutions
+
