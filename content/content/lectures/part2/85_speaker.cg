@@ -4,7 +4,14 @@ desc: Guest Speaker Osamah Mandawi
 cat: general
 slides: true
 ---
-:h3 Guest Speaker from Hubspot
+:h3 Logistics
+* How was the data modeling homework? Any questions?
+* Everyone in class please answer in slack
+    * What is a foreign key?
+    * Why would you put an index on a column?
+    * Without knowing any context, would you default to putting an index on a foreign key?
+
+:slide_bigtitle Guest Speaker from Hubspot
 :topic_include :osamah_mandawi
 
 :slide_bigtitle Talk
@@ -23,3 +30,4 @@ slides: true
 * Solutions
 * Caveats with solutions
 
+:lecture_end
