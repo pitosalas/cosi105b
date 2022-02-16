@@ -4,7 +4,13 @@ desc: We start going in to more complicated core architectures
 cat: nt
 slides: true
 ---
-:h3 Review 
+:h3 Logistics
+
+* Questions to ask in Slack
+    * Were you successful with NT Storage?
+    * Did you use a new gem? Which one?
+    * What problem did you hit, and were you able to overcome it?
+    * What is your heroku url?
 
 * Let's take a look at this active_record example: [sinatra_activerecord_sample](https://github.com/pitosalas/public_samples/tree/master/sinatra/sinatra_activerecord_sample)
 
