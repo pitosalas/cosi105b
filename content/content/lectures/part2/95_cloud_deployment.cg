@@ -1,6 +1,7 @@
 ---
 title: Deploying to the  Cloud
 desc: How is the cloud a central part of modern software engineering?
+slides: true
 cat: scale
 ---
 :h2 Logistics 
