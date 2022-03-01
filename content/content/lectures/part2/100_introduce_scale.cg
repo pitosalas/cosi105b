@@ -1,10 +1,17 @@
 ---
-title: Introduction to Scale
+title: Scalable Service design
 desc: What does scalability mean? What do scalability problems look like?
 cat: scale
 slides: true
 ---
+:h3 Logistics
+
+* Secret Attendance Code
+* 
+
 :slide_title Reviewing the reading
+
 * :topic_link :scaling_api_design
 * :topic_link :devops
- :lecture_end
+
+:lecture_end
