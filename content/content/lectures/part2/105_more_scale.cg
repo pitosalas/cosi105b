@@ -4,10 +4,16 @@ desc: Examining what scalability means
 slides: true
 cat: scale
 ---
-:h3 Topics today
+:h3 Logistics
+* Secret code
+* Please do this [quick survey](https://forms.gle/iWRkwDUwcCnxwtF78)
+* 10 Minute Quiz: xxxx
+
+:topic_include :scaling
+
+:slide_title More topics
 
 * More about :topic_link :devops
-* How to think about :topic_link :scaling
 * The mighty :topic_link :monolith
 * Agility in features :topic_link :feature_switches
 
