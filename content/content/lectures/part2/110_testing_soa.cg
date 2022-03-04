@@ -1,0 +1,20 @@
+---
+title: Testing in the world of SOA
+desc: Testing, Unit Testing and special cases in SOA
+cat: scale
+slides: true
+---
+:h3 Logistics
+* Secret code is:
+
+:topic_include :testing_intro
+
+:slide_title Additional material
+* :topic_link :money_class_test_example
+* :topic_link :testing_services
+* :topic_link :testing_pyramid
+* :topic_link :mocking
+* :topic_link :testing_data
+* :topic_link :testing_reasons
+
+:lecture_end
