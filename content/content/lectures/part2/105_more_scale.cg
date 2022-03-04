@@ -4,7 +4,14 @@ desc: Examining what scalability means
 slides: true
 cat: scale
 ---
-:h3 Topics today
+:h3 Logistics
+* Secret code is: 
+* Do the [Questinnaire](https://forms.gle/WGLeMjMmP7VxEq6bA)
+* Do the [quiz (10 minutes)](https://www.gradescope.com/courses/354338/assignments/1905296)
+
+:topic_include :scaling
+
+:slide_title
 
 * More about :topic_link :devops
 * How to think about :topic_link :scaling
