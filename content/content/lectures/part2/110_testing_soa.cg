@@ -8,11 +8,11 @@ slides: true
 * Secret code is:
 
 :topic_include :testing_intro
+:topic_include :testing_pyramid
+:topic_include :testing_services
 
-:slide_title Additional material
+:slide_bigtitle Additional material
 * :topic_link :money_class_test_example
-* :topic_link :testing_services
-* :topic_link :testing_pyramid
 * :topic_link :mocking
 * :topic_link :testing_data
 * :topic_link :testing_reasons
