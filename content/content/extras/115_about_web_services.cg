@@ -1,0 +1,12 @@
+---
+title: nanoTwitter and REST APIs
+desc: How to think about Web Services API designs and documentation
+slides: true
+---
+:h3 Logistics
+* Secret code!
+* 
+
+:topic_include :rest_web_services
+
+:lecture_end
