@@ -7,7 +7,8 @@ cat: scale
 
 :h3 Logistics
 * Attendance code: 
-* 
+* Review  [bcrypt usage](https://github.com/bcrypt-ruby/bcrypt-ruby)
+* Review [sinatra_hello_service](https://github.com/pitosalas/sinatra_hello_service)
 
 :slide_title General Notes on Review of your code so far
 * There should be a test/ directory with tests written prefarably in Minitest although RSpec is ok too
