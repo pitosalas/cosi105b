@@ -2,7 +2,6 @@
 title: "Testing Scalability"
 desc: How to approach the analysis of scaling, in particular for nanoTwitter
 slides: true
-cat: scale
 ---
 
 :h3 Logistics

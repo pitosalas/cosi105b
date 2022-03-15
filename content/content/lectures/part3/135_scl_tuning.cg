@@ -11,6 +11,6 @@ cat: scale
 
 :topic_include :nt_load_testing
 
-:topic_include :tuning_scalability 
+:topic_include :tuning_scalability
 
 :lecture_end
