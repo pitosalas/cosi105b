@@ -2,15 +2,16 @@
 title: "Tuning for Scale"
 desc: What are some of the key ways in which a system can fail to scale?
 cat: scale
+slides: true
 ---
 
 :h3 Logistics
 
 * Magic Word
-* Adding to Readme: new work in the release but also who was primarily responsible
-
-:topic_include :nt_load_testing
+* Adding to :topic_link :project_readme: new work in the release but also who was primarily responsible
 
 :topic_include :tuning_scalability
+
+:topic_include :nt_load_testing
 
 :lecture_end
