@@ -1,0 +1,8 @@
+---
+title: "Scaling Patterns: Logging"
+desc: Guest Speaker Bob Stachel about TripAdvisor
+---
+* Presentation Link: [Bob Stachel Presentation](https://docs.google.com/presentation/d/1_tkySFUCLrw7ikMfIUhgGKHw2jMwaMY2p08exNHKtmU/edit?usp=sharing)
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>
