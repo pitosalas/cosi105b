@@ -52,6 +52,20 @@ slides: true
 :slide_title How to log
 * Each language is different
 * Each platform is a little different
+* But the code is pretty similar!
+
+:source_begin :ruby
+@logger = Logger.new($stdout)
+.
+.
+.
+@logger.info "Retrieving #{records} records asynchronously"
+.
+.
+.
+:source_end
+
+
 
 
 
