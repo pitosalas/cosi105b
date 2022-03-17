@@ -44,13 +44,9 @@ slides: true
 
 :source_begin :bash
 2019-04-04T18:17:44.169212+00:00 app[web.1]: I, [2019-04-04T18:17:44.169077 #11]  INFO -- : Generating TweetTimeline for 50 lines
-
 2019-04-04T18:17:44.249469+00:00 app[web.1]: D, [2019-04-04T18:17:44.249343 #11] DEBUG -- :    (16.0ms)  SELECT "users"."id" FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = $1  [["follower_id", 6026]]
-
 2019-04-04T18:17:44.373801+00:00 app[web.1]: D, [2019-04-04T18:17:44.373457 #11] DEBUG -- :   User Load (2.5ms)  SELECT "users".* FROM "users" WHERE "users"."id" = $1  [["id", 6026]]
-
 2019-04-04T18:17:44.386413+00:00 heroku[router]: at=info method=GET path="/" host=psnano.herokuapp.com request_id=9ddd467c-2595-47b5-82d9-85f3aa226fef fwd="129.64.120.217" dyno=web.1 connect=0ms service=389ms status=200 bytes=10412 protocol=https
-
 :source_end
 
 :slide_title How to log
