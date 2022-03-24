@@ -1,0 +1,14 @@
+---
+title: "Database Tuning 1"
+desc: How database architecture affects performance and scale and how to improve it.
+cat: scale
+slides: true
+---
+:h3 Logistics
+* Magic code is: 
+
+:topic_include :scaling_db_tuning
+:topic_include :scaling_db_partitioning
+:topic_include :scaling_db_caching
+
+:lecture_end
