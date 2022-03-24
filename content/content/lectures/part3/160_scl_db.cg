@@ -6,6 +6,13 @@ slides: true
 ---
 :h3 Logistics
 * Magic code is: 
+* Looking at "nano twitter core" submissions
+* Excellent progress! Keep it up. 
+* There is still a lot of time but there is also a lot to do! I do glance at the commit history and in some cases there are big lags with no updates.
+* Each team has received a slack message today from me with a question about your submissions
+* Remember to update readme with name of who contributed to a feature or change. How can we overcome the "server down" problem? Maybe a staging server? Not sure.
+* In most cases the functionality that was required for the submission was not there. Believe me a try really hard to find it!
+* The grade weight of these interim submissions is not super high. But you will not do well if you try to cram it all in at the end!
 
 :topic_include :scaling_db_tuning
 :topic_include :scaling_db_partitioning
