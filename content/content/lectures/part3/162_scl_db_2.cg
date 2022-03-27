@@ -1,8 +1,8 @@
 ---
 title: "Database Tuning 2"
-homework: TBD
 desc: How database architecture affects performance and scale and how to improve it
 cat: scale
+slides: true
 ---
 <%= homework_hdr %>
 
@@ -16,9 +16,6 @@ cat: scale
 
 
 #### Today
-:callout :small, "Presentation", " Zekai Fan	NodeJS - with Express, compared to Sinatra"/
 
-<%= include_topic :scaling_db_tuning %>
 <%= include_topic :scaling_db_caching %>
-<%= include_topic :scaling_db_partitioning %>
 
