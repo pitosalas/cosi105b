@@ -1,0 +1,17 @@
+---
+title: "Concurrency 1"
+desc: "Synchronous and asynchronous processing, threads and processes"
+slides: true
+cat: scale
+---
+:h3 Logistics
+
+* Secret code:
+
+:topic_include :scaling_concur
+:topic_include :scaling_async
+
+:callout :small, "team", " Plan to use asynchronous processing?"
+
+
+:lecture_end
