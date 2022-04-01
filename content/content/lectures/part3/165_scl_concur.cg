@@ -7,6 +7,10 @@ cat: scale
 :h3 Logistics
 
 * Secret code:
+* What is the highest number of threads you've gotten to?
+* How much of the test interface have you implenmented?
+* Any questions?
+
 
 :topic_include :scaling_concur
 :topic_include :scaling_async
