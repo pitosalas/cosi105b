@@ -72,6 +72,7 @@ end
 * So: Your ruby code is probably not thread-safe!
 
 :slide_title What about the GIL?
+
 * GIL (Global Interpreter Lock) ensures that your Ruby code doesn't run *in parallel* - at the same time
 * But operating system threads get interrupted (by the clock) at arbitrary times
 * GIL is what makes MRI itself threadsafe but it doesnt make your code threadsafe
@@ -96,6 +97,7 @@ end
   * No thread safety problems
   * Each process uses a complete memory space
 * 1 or more `threads` per `worker`
-  * Thread safety problems can Architectures
+  * Pay attention to thread safety
+  * If a "global" value changes out from under you -- suspect a race condition
 
 :lecture_end
