@@ -16,4 +16,5 @@ cat: scale
 :topic_include :scaling_async
 
 :callout :small, "team", " Plan to use asynchronous processing?"
+
 :lecture_end
