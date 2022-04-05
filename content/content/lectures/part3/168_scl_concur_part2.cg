@@ -1,24 +1,27 @@
 ---
 title: "Concurrency 2"
-desc: Continuing the discussion on this critical aspect of scaling 
-homework: 1) Implement validation api; 2) Reading
+desc: Continuing the discussion on this critical aspect of scaling
 cat: scale
 ---
+
 :h3 Logistics
 
 * Magic Word is
 * Status of projects
 * Quick review of :topic_link :hw_105_validation_api
+* Discuss architecture of OTP
 
 :slide_title Tuning Threads and Processes
 
 :slide_title Why
+
 * In tuning an application for performance you need to configure the web server, app server, database server
 * How many threads, how many processes, etc
 * If done wrong the peformance will actually get worse
 * Or you will have very weird bugs
 
 :slide_title Review the major players
+
 1. The web server (thin, puma, other)
 1. Your sinatra app itself
 1. Any gems you use (i.e. ActiveRecord itself)
@@ -31,8 +34,11 @@ cat: scale
 * But a class instance variable (.e. `def self do this thing; @a = 100`) is asking for trouble
 
 :slide_title Mini case study
+
 :source_begin :ruby
-class CurrentState
+
+glass CurrentState
+
   def self.favorite_user_id
      @favorite_user_id
   end
@@ -46,7 +52,7 @@ class CurrentState
   end
 end
 
-# And then...
+# And then
 def handle_form
   CurrentState.favorite_user_id = some_user_id
 #...
