@@ -1,0 +1,20 @@
+---
+title: "Queueing"
+desc: Queuing and message passing are basic techniques in scaling
+cat: scale
+---
+:h3 Logistics
+* Secret code: 
+
+:topic_include :scaling_queueing
+:topic_include :queue_cache_comparison
+
+:slide_title References used in this talk
+
+* [RabbitMQ Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
+* [Rabbit Demo (github)](https://github.com/Cosi-105/rabbit_demo)
+* [Ruby Concurrency Explained](http://merbist.com/2011/02/22/concurrency-in-ruby-explained/)
+* [Rabbit MQ and Kafka](https://karolgalanciak.com/blog/2019/02/24/messages-on-rails-part-1-introduction-to-kafka-and-rabbitmq/)
+* [Queues Don't Fix Overload](http://ferd.ca/queues-don-t-fix-overload.html)
+* [Architecting Rails as Microservice Applications](http://blog.codeship.com/architecting-rails-apps-as-microservices/?utm_source=rubyweekly&utm_medium=email)
+
