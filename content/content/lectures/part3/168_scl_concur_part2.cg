@@ -2,6 +2,7 @@
 title: "Concurrency 2"
 desc: Continuing the discussion on this critical aspect of scaling
 cat: scale
+slides: true
 ---
 
 :h3 Logistics
@@ -106,4 +107,7 @@ end
   * Pay attention to thread safety
   * If a "global" value changes out from under you -- suspect a race condition
 
+:slide_title Useful References for this section
+* [What Ruby Background Framework](https://scoutapm.com/blog/which-ruby-background-job-framework-is-right-for-you)
+* [Bulk Insert Support in ActiveRecord](https://www.bigbinary.com/blog/bulk-insert-support-in-rails-6)
 :lecture_end
