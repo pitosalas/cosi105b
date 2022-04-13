@@ -2,115 +2,113 @@
 title: "SOA + µservices"
 desc: Look at applications of microservices and SOA in building scalable systems. Consider risks and benefits.
 cat: scale
+slides: true
 ---
+:h4 Logistics
+
+* Secret code:
+* Link to the rules and process for :topic_link :scalability_runoff
+* Offer: Code Review
 
 :topic_include :scaling_SOA
 
-<img src="https://site.xavier.edu/polt/typewriters/franklin.jpg" align="right" width="100">
+:slide_title Monolith
 
-
-##### Userful but not mandatory Reading
-* [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
-* [Linux Process Management: Commands you should know](http://www.hostingadvice.com/blog/linux-process-management-commands-know/)
-* [Ruby One Liners](https://github.com/learnbyexample/Command-line-text-processing)
-* [Architecting Apps as MicroServices](https://blog.codeship.com/architecting-rails-apps-as-microservices/)
-* [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
-* Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
-
-#### Today
-* Link to the rules and process for :topic_link :scalability_runoff / 
-* Link as a reminder of the required :topic_link :nt_test_interface /
-* Demonstrate with Julian and Yifan what the scalability runoff will be like
-
-#### SOA / Microservices / Monolith
-<img src="http://www.martinfowler.com/articles/microservices/images/sketch.png" width="350" align="right">
-
-##### Monolith
 * What does a classic "Monolithic Web App" look like?
-  * Web Server - Processes HTTP and delivers it to app code (Puma + Sinatra, for example)
-  * App Server - (Your code, for example)
-  * Database Server - Postgres, Oracle, Mongo, etc.
+* Web Server - Processes HTTP and delivers it to app code (Puma + Sinatra, for example)
+* App Server - (Your code, for example)
+* Database Server - Postgres, Oracle, Mongo, etc.
+
+:slide_title Advantages and Disadvantages
 
 * Advantages
-  * Good for small-medium projects with similar teams
-  * Single code base
-  * Don't have to design, write, test, maintain service Apis
+  1. Good for small-medium projects with similar teams
+  1. Single code base
+  1. Don't have to design, write, test, maintain service Apis
 * Disadvatages
-  * If teams are large there can be too much coupling
-  * Scaling out (if you need to) is very tough
+  1. If teams are large there can be too much coupling
+  1.  Scaling out (if you need to) is very tough
 
-##### Service Oriented Architecture
+:slide_title  Service Oriented Architecture
+
 * Single application, designed as
-  * Suite of (small?) services
-  * Each running in a separate process
-  * Communicating with lightweight mechanisms
-  * Relying on internal REST Apis or Queues or Both
+  1. Suite of (small?) services
+  1. Each running in a separate process
+  1. Communicating with lightweight mechanisms
+  1. Relying on internal REST Apis or Queues or Both
 * Scaling up vs. Scaling out
 * Beware of **premature optimization!**
 
-##### Organize around business capabilities
-* Conway's law  simply states that
+:slide_title Conways law: Organize around business capabilities
+:quote Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure" (see [Conway's Law](http://www.melconway.com/Home/Committees_Paper.html))
 
-  "Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure" (see [Conway's Law](http://www.melconway.com/Home/Committees_Paper.html))
-
-* Decentralized Governance
-
-##### Communication
+:slide_title Communication
 * Trade-offs in communications between services
 * "Smart endpoints and dumb pipes" - End to end principle
 * What would "Smart pipes and dumb endpoints" mean? (see POTS)
 
-##### "Unix Philosophy"
+:slide_title "Unix Philosophy"
+1. Write programs that do one thing and do it well.
+1. Write programs to work together.
+1. Write programs to handle text streams, because that is a universal interface.
+
 * **Unix Philosophy** (See [Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)). Summarized by [Peter Salus](https://en.wikipedia.org/wiki/Peter_H._Salus): (not [Pito Salas](https://en.wikipedia.org/wiki/Pito_Salas)):
-  * Write programs that do one thing and do it well.
-  * Write programs to work together.
-  * Write programs to handle text streams, because that is a universal interface.
 
-#####\<interlude>
-
-<%= code_begin %>
+:source_begin :bash
 ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
-<%= code_end %>
+:source_end
 
  * [Source of example](http://unix.stackexchange.com/questions/30759/whats-a-good-example-of-piping-commands-together)
  * [Using Ruby instead of Awk](http://nithinbekal.com/posts/ruby-sed-awk/)
 
-#####\</interlude\>
+:slide_title Famous (and valuable) Law: "Postel's Principle"
 
-##### Famous (and valuable) Law: "Postel's Principle"
-  * Postel WROTE the early specification of TCP!
-  * Look at this [RFC #7](https://tools.ietf.org/html/std7). Wow!
-  * Often restated as the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle)
-  * Some people don't agree: [Postel's Principle is a Bad Idea](https://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea)
-:callout :small, "Postel's Principle", " TCP implementations should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others."/
+* Postel WROTE the early specification of TCP!
+* Look at this [RFC #7](https://tools.ietf.org/html/std7). Wow!
+* Often restated as the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle)
+* Some people don't agree: [Postel's Principle is a Bad Idea](https://programmingisterrible.com/post/42215715657/postels-principle-is-a-bad-idea)
 
-##### Design Considerations
-<img src="http://www.martinfowler.com/articles/microservices/images/decentralised-data.png" width="400" align="right">
+:slide_title Postel's Principle
 
-* Evolutionary Design
-  * Start with 1 big service (Majestic Monolith)
-  * Identify with practice what sub-component could be a service
-  * Keep things that change at the same time together in the same service (module)
-  * Horizontal Scalability
-  * Redundancy
-* Once services are introduced
-  * Service discovery
-  * Errors and timeouts etc
-  * Load balancing (Smart client, Hardware, Software)
-  * System level caching: Redis
-  * Queueing
-* Databases:
-  * Monolith: one database with many tables
-  * Microservice: Separate and distinct databases, per service
-  * Shard or Partition
-* Interfaces
-  * Internal implementation of service is irrelevant and isolated
-* Benefits and Goals that are satisfied:
-  * Any service can be replaced by new code with (no/minimal) impact on other services
-  * Each service can be designed and tested independently from the others
-  * Failure in one service is kept isolated
+:quote Postel's Principle: [designers] should follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others
 
-##### Things to think about
+:slide_title The Big Picture
+:image :soa_diag_2
+
+:slide_title Evolutionary Design
+
+* Start with 1 big service (Majestic Monolith)
+* Identify with practice what sub-component could be a service
+* Keep things that change at the same time together in the same service (module)
+* Horizontal Scalability
+* Redundancy
+
+:slide_title Once services are introduced
+
+* Service discovery
+* Errors and timeouts etc
+* Load balancing (Smart client, Hardware, Software)
+* System level caching: Redis
+* Queueing
+
+:slide_title Databases
+
+* Monolith: one database with many tables
+* Microservice: Separate and distinct databases, per service
+* Shard or Partition
+
+:slide_title Interfaces
+
+* Internal implementation of service is irrelevant and isolated
+
+:slide_title Benefits and Goals that are satisfied:
+
+* Any service can be replaced by new code with (no/minimal) impact on other services
+* Each service can be designed and tested independently from the others
+* Failure in one service is kept isolated
+
+:slide_title Things to think about
+
 * Services need to be "discovered"
 * Services can be offline (crashed)
 * Permanently or temporarily
@@ -122,17 +120,27 @@ ps aux | grep ruby | grep -v grep | ruby -n -e 'puts $_.split[1]' | xargs kill
 * Retrying with backoff
 * [Circuit Breaker](http://martinfowler.com/bliki/CircuitBreaker.html)
 
-#### Discussion
-* We have the following architecture:
-  * Service 1: Contains sinatra, processes http, displays forms etc.
-  * Service 2: Executes certain long running services (e.g. major data load), fed by a job queue
-  * Considering Service 3
-* When user tweets, how do we get that into the database?
-  * Directly within Service 1
-  * In Service 2, as a job on a general queue
-  * In a new service 3, in a job queue, dedicated to tweets
-  * In a new service 3, in a publish/subscribe queue
+:slide_title Scenario
+
+* Service 1: Contains sinatra, processes http, displays forms etc.
+* Service 2: Executes certain long running services (e.g. major data load), fed by a job queue
+* Considering Service 3
+
+:slide_title When user tweets, how do we get that into the database?
+
+* Directly within Service 1
+* In Service 2, as a job on a general queue
+* In a new service 3, in a job queue, dedicated to tweets
+* In a new service 3, in a publish/subscribe queue
+
+:slide_title For Further Reading
+
+* [Sinatra/Heroku Microservices](https://silkandspinach.net/2014/08/31/sinatraheroku-microservices/)
+* [Linux Process Management: Commands you should know](http://www.hostingadvice.com/blog/linux-process-management-commands-know/)
+* [Ruby One Liners](https://github.com/learnbyexample/Command-line-text-processing)
+* [Architecting Apps as MicroServices](https://blog.codeship.com/architecting-rails-apps-as-microservices/)
+* [How to do services in Heroku](https://www.rdegges.com/2014/heroku-and-soa/)
+* Contrast with [Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.cm2vu12s8)
 
 
-#### Next Class
-  :lecture_end
+:lecture_end
