@@ -1,0 +1,12 @@
+---
+title: Scalability Runoff 1
+desc: First Try
+slides: true
+cat: general
+---
+:h3 Logistics
+
+* Today we will go through the whole scalability runoff for the first time.
+* Tomorrow we will finish
+
+:topicinclude :scalability_runoff

@@ -1,10 +1,19 @@
 ---
 title: Software Engineering
 desc: We look Computer Science and Software Engineering
+slides: true
+cat: general
 ---
+:h3 Logistics
+
+* Secret Code
+
+:slide_title Software Engineering
 
 * What does this mean: :topic_link :softw_engineering_brief
-* How do be effective: :topic_link :se_rules_of_thumb
+* Software Engineering Rules of Thumb: :topic_link :se_rules_of_thumb
+* Personal Effectiveness: :topic_link :effectiveness_rules_of_thumb
+
 
 :slide_title For Further Reading 
 
