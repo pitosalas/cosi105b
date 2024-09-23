@@ -8,6 +8,6 @@ cat: web
 
 1. :topic_link :nt_functionality -- Point by point requirements for the project that everyone will be doing, nanoTwitter
 1. :topic_link :nt_arch -- Review of key technical points of architecture and process
-1. :section_link :intro, :nanotwitter -- Approximate sequence of steps to get to the finished product
+2. :topic_link  :nanotwitter -- Approximate sequence of steps to get to the finished product
 
 :lecture_end

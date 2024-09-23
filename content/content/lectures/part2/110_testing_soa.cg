@@ -9,8 +9,6 @@ slides: true
 * Masks may be off if you are tripple vaxed and healthy
 * How did it go with Authentication?
 
-:topic_include :testing_intro
-:topic_include :testing_pyramid
 :topic_include :testing_services
 
 :slide_bigtitle Additional material
